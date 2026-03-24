@@ -674,9 +674,9 @@ export default function CuscUiisPage() {
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 flex-grow content-start min-h-[400px]">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 flex-grow content-start min-h-[300px] ">
                         {/* Ngân hàng */}
-                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-h-[275px]">
                           <div className="bg-[#cc0000] text-white text-center py-3 font-bold text-[15px] uppercase tracking-wide">
                             Liên kết thu học phí qua Ngân hàng
                           </div>
@@ -694,7 +694,7 @@ export default function CuscUiisPage() {
                         </div>
 
                         {/* Hóa đơn điện tử */}
-                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-h-[275px]">
                           <div className="bg-[#d97726] text-white text-center py-3 font-bold text-[15px] uppercase tracking-wide">
                             Liên kết xuất hóa đơn điện tử
                           </div>
@@ -706,7 +706,7 @@ export default function CuscUiisPage() {
                         </div>
 
                         {/* Cổng thanh toán & Ví điện tử */}
-                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-h-[275px]">
                           <div className="bg-[#b8860b] text-white text-center py-3 font-bold text-[15px] uppercase tracking-wide">
                             Liên kết cổng thanh toán & Ví điện tử
                           </div>
@@ -722,12 +722,12 @@ export default function CuscUiisPage() {
                         </div>
 
                         {/* Chữ ký số */}
-                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-h-[275px]">
                           <div className="bg-[#4f46e5] text-white text-center py-3 font-bold text-[15px] uppercase tracking-wide">
                             Tích hợp chữ ký số
                           </div>
                           <div className="p-6 flex flex-col gap-6 items-center justify-center bg-[#e0e7ff] min-h-[220px]">
-                            <img src={new URL('../assets/images/cusc-uiis/du-an-thiet-ke-nhan-dien-thuong-hieu-vgca.png', import.meta.url).href} alt="Cục Cơ yếu Chính phủ" className="h-20 object-contain" />
+                            <img src={new URL('../assets/images/cusc-uiis/vgca.png', import.meta.url).href} alt="Cục Cơ yếu Chính phủ" className="h-20 object-contain" />
                             <div className="w-16 h-px bg-indigo-300"></div>
                             <div className="flex flex-col items-center">
                               <div className="font-bold text-indigo-900 text-lg text-center uppercase tracking-wide">Ký số công cộng</div>
