@@ -674,60 +674,60 @@ export default function CuscUiisPage() {
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 flex-grow content-start min-h-[300px] ">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-1 flex-grow content-start min-h-[250px] ">
                         {/* Ngân hàng */}
-                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-h-[275px]">
+                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-h-[250px]">
                           <div className="bg-[#cc0000] text-white text-center py-3 font-bold text-[15px] uppercase tracking-wide">
                             Liên kết thu học phí qua Ngân hàng
                           </div>
-                          <div className="p-6 grid grid-cols-3 gap-4 items-center justify-items-center bg-[#f5f5f5] min-h-[220px]">
-                            <img src={new URL('../assets/images/cusc-uiis/vcb.png', import.meta.url).href} alt="Vietcombank" className="h-12 object-contain" />
-                            <img src={new URL('../assets/images/cusc-uiis/bidv.png', import.meta.url).href} alt="BIDV" className="h-12 object-contain" />
-                            <img src={new URL('../assets/images/cusc-uiis/ocb.png', import.meta.url).href} alt="OCB" className="h-12 object-contain" />
-                            <img src={new URL('../assets/images/cusc-uiis/hdbank.png', import.meta.url).href} alt="HDBank" className="h-12 object-contain" />
-                            <img src={new URL('../assets/images/cusc-uiis/namabank.png', import.meta.url).href} alt="NAM A BANK" className="h-12 object-contain" />
-                            <img src={new URL('../assets/images/cusc-uiis/vietinbank.png', import.meta.url).href} alt="VietinBank" className="h-12 object-contain" />
-                            <img src={new URL('../assets/images/cusc-uiis/argibank.png', import.meta.url).href} alt="AGRIBANK" className="h-12 object-contain" />
+                          <div className="p-3 grid grid-cols-3 gap-1 items-center justify-items-center bg-[#f5f5f5] min-h-[210px]">
+                            <img src={new URL('../assets/images/cusc-uiis/vcb.png', import.meta.url).href} alt="Vietcombank" className="h-10 object-contain" />
+                            <img src={new URL('../assets/images/cusc-uiis/bidv.png', import.meta.url).href} alt="BIDV" className="h-10 object-contain" />
+                            <img src={new URL('../assets/images/cusc-uiis/ocb.png', import.meta.url).href} alt="OCB" className="h-10 object-contain" />
+                            <img src={new URL('../assets/images/cusc-uiis/hdbank.png', import.meta.url).href} alt="HDBank" className="h-10 object-contain" />
+                            <img src={new URL('../assets/images/cusc-uiis/namabank.png', import.meta.url).href} alt="NAM A BANK" className="h-10 object-contain" />
+                            <img src={new URL('../assets/images/cusc-uiis/vietinbank.png', import.meta.url).href} alt="VietinBank" className="h-10 object-contain" />
+                            <img src={new URL('../assets/images/cusc-uiis/argibank.png', import.meta.url).href} alt="AGRIBANK" className="h-10 object-contain" />
                             <img src={new URL('../assets/images/cusc-uiis/pvcombank.png', import.meta.url).href} alt="PVcomBank" className="h-12 object-contain" />
-                            <img src={new URL('../assets/images/cusc-uiis/kienlongbank.png', import.meta.url).href} alt="KienlongBank" className="h-12 object-contain" />
+                            <img src={new URL('../assets/images/cusc-uiis/kienlongbank.png', import.meta.url).href} alt="KienlongBank" className="h-10 object-contain" />
                           </div>
                         </div>
 
                         {/* Hóa đơn điện tử */}
-                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-h-[275px]">
+                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-h-[250px]">
                           <div className="bg-[#d97726] text-white text-center py-3 font-bold text-[15px] uppercase tracking-wide">
                             Liên kết xuất hóa đơn điện tử
                           </div>
-                          <div className="p-6 flex flex-col gap-0 items-center justify-center bg-[#faebd7] min-h-[220px]">
+                          <div className="p-1 flex flex-col gap-0 items-center justify-center bg-[#faebd7] min-h-[210px]">
                             <img src={new URL('../assets/images/cusc-uiis/misaInvoid.png', import.meta.url).href} alt="MISA meInvoice" className="h-16 object-contain" />
                             <img src={new URL('../assets/images/cusc-uiis/viettel.png', import.meta.url).href} alt="Viettel" className="h-16 object-contain" />
-                            <img src={new URL('../assets/images/cusc-uiis/vnpt.png', import.meta.url).href} alt="VNPT" className="h-20 object-contain" />
+                            <img src={new URL('../assets/images/cusc-uiis/vnpt.png', import.meta.url).href} alt="VNPT" className="h-16 object-contain" />
                           </div>
                         </div>
 
                         {/* Cổng thanh toán & Ví điện tử */}
-                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-h-[275px]">
+                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-h-[230px]">
                           <div className="bg-[#b8860b] text-white text-center py-3 font-bold text-[15px] uppercase tracking-wide">
                             Liên kết cổng thanh toán & Ví điện tử
                           </div>
-                          <div className="p-4 flex flex-col gap-0 items-center justify-center bg-[#fff8dc] min-h-[220px]">
+                          <div className="p-2 flex flex-col gap-0 items-center justify-center bg-[#fff8dc] min-h-[220px]">
                             <div className="flex gap-6 items-center justify-center flex-wrap">
-                              <img src={new URL('../assets/images/cusc-uiis/vnpay.png', import.meta.url).href} alt="VNPAY" className="h-30 object-contain" />
+                              <img src={new URL('../assets/images/cusc-uiis/vnpay.png', import.meta.url).href} alt="VNPAY" className="h-25 object-contain" />
                               <img src={new URL('../assets/images/cusc-uiis/viettelpay.png', import.meta.url).href} alt="Viettel Pay" className="h-25 object-contain" />
                             </div>
                             <div className="flex gap-6 items-center justify-center flex-wrap">
-                              <img src={new URL('../assets/images/cusc-uiis/vnptpay.png', import.meta.url).href} alt="VNPT Pay" className="h-10 object-contain" />
+                              <img src={new URL('../assets/images/cusc-uiis/vnptpay.png', import.meta.url).href} alt="VNPT Pay" className="h-8 object-contain" />
                             </div>
                           </div>
                         </div>
 
                         {/* Chữ ký số */}
-                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-h-[275px]">
+                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-h-[230px]">
                           <div className="bg-[#4f46e5] text-white text-center py-3 font-bold text-[15px] uppercase tracking-wide">
                             Tích hợp chữ ký số
                           </div>
-                          <div className="p-6 flex flex-col gap-6 items-center justify-center bg-[#e0e7ff] min-h-[220px]">
-                            <img src={new URL('../assets/images/cusc-uiis/vgca.png', import.meta.url).href} alt="Cục Cơ yếu Chính phủ" className="h-20 object-contain" />
+                          <div className="p-2 flex flex-col gap-3 items-center justify-center bg-[#e0e7ff] min-h-[200px]">
+                            <img src={new URL('../assets/images/cusc-uiis/vgca.png', import.meta.url).href} alt="Cục Cơ yếu Chính phủ" className="h-16 object-contain" />
                             <div className="w-16 h-px bg-indigo-300"></div>
                             <div className="flex flex-col items-center">
                               <div className="font-bold text-indigo-900 text-lg text-center uppercase tracking-wide">Ký số công cộng</div>
@@ -762,69 +762,103 @@ export default function CuscUiisPage() {
 
                       <div className="flex-grow flex flex-col">
                         {/* Mobile App */}
-                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col h-full">
-                          <div className="bg-gradient-to-r from-blue-600 to-blue-400 text-white text-center py-3 font-bold text-[15px] uppercase tracking-wide">
+                        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-lg flex flex-col h-full">
+                          <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 text-white text-center py-4 font-black text-[16px] uppercase tracking-wider shadow-md">
+                            <Smartphone className="inline-block mr-2 -mt-1" size={20} />
                             Ứng dụng di động
                           </div>
-                          <div className="p-6 flex flex-col lg:flex-row items-center justify-center bg-blue-50 flex-grow relative overflow-hidden gap-8">
-                            <div className="flex-1 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4 w-full relative z-10">
+                          <div className="p-8 flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-cyan-50 flex-grow relative overflow-hidden">
+                            {/* Decorative background circles */}
+                            <div className="absolute top-10 left-10 w-32 h-32 bg-blue-100/40 rounded-full blur-2xl"></div>
+                            <div className="absolute bottom-10 right-10 w-40 h-40 bg-cyan-100/40 rounded-full blur-2xl"></div>
+
+                            {/* App Cards - Centered */}
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full relative z-10 max-w-4xl">
                               {/* Giảng viên */}
-                              <div className="bg-white rounded-xl p-4 shadow-sm flex items-center gap-4 border-l-4 border-blue-500 hover:shadow-md transition-shadow">
-                                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 shrink-0">
-                                  <UserCheck size={20} />
-                                </div>
-                                <div className="text-left">
-                                  <h4 className="font-bold text-blue-900 text-sm">Giảng viên</h4>
-                                  <div className="flex gap-2 mt-1">
-                                    <span className="text-[10px] font-bold text-slate-400 flex items-center gap-0.5"><Apple size={10}/> iOS</span>
-                                    <span className="text-[10px] font-bold text-slate-400 flex items-center gap-0.5"><Play size={10}/> Android</span>
+                              <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                className="group bg-gradient-to-br from-blue-50 to-white rounded-2xl p-5 shadow-md hover:shadow-xl transition-all duration-300 border border-blue-100 hover:border-blue-300 hover:-translate-y-1"
+                              >
+                                <div className="flex flex-col items-center text-center">
+                                  <div className="relative mb-4">
+                                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                      <UserCheck size={32} strokeWidth={2} />
+                                    </div>
+                                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow">
+                                      <div className="w-3.5 h-3.5 bg-green-500 rounded-full"></div>
+                                    </div>
+                                  </div>
+                                  <h4 className="font-black text-blue-900 text-lg mb-3">Giảng viên</h4>
+                                  <div className="flex gap-2">
+                                    <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-md flex items-center gap-1">
+                                      <Apple size={10} /> iOS
+                                    </span>
+                                    <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-md flex items-center gap-1">
+                                      <Play size={10} /> Android
+                                    </span>
                                   </div>
                                 </div>
-                              </div>
+                              </motion.div>
 
                               {/* Sinh viên */}
-                              <div className="bg-white rounded-xl p-4 shadow-sm flex items-center gap-4 border-l-4 border-emerald-500 hover:shadow-md transition-shadow">
-                                <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 shrink-0">
-                                  <GraduationCap size={20} />
-                                </div>
-                                <div className="text-left">
-                                  <h4 className="font-bold text-emerald-900 text-sm">Sinh viên</h4>
-                                  <div className="flex gap-2 mt-1">
-                                    <span className="text-[10px] font-bold text-slate-400 flex items-center gap-0.5"><Apple size={10}/> iOS</span>
-                                    <span className="text-[10px] font-bold text-slate-400 flex items-center gap-0.5"><Play size={10}/> Android</span>
+                              <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.1 }}
+                                className="group bg-gradient-to-br from-emerald-50 to-white rounded-2xl p-5 shadow-md hover:shadow-xl transition-all duration-300 border border-emerald-100 hover:border-emerald-300 hover:-translate-y-1"
+                              >
+                                <div className="flex flex-col items-center text-center">
+                                  <div className="relative mb-4">
+                                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                      <GraduationCap size={32} strokeWidth={2} />
+                                    </div>
+                                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow">
+                                      <div className="w-3.5 h-3.5 bg-green-500 rounded-full"></div>
+                                    </div>
+                                  </div>
+                                  <h4 className="font-black text-emerald-900 text-lg mb-3">Sinh viên</h4>
+                                  <div className="flex gap-2">
+                                    <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-md flex items-center gap-1">
+                                      <Apple size={10} /> iOS
+                                    </span>
+                                    <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-md flex items-center gap-1">
+                                      <Play size={10} /> Android
+                                    </span>
                                   </div>
                                 </div>
-                              </div>
+                              </motion.div>
 
                               {/* Phụ huynh */}
-                              <div className="bg-white rounded-xl p-4 shadow-sm flex items-center gap-4 border-l-4 border-purple-500 hover:shadow-md transition-shadow">
-                                <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 shrink-0">
-                                  <Users size={20} />
-                                </div>
-                                <div className="text-left">
-                                  <h4 className="font-bold text-purple-900 text-sm">Phụ huynh</h4>
-                                  <div className="flex gap-2 mt-1">
-                                    <span className="text-[10px] font-bold text-slate-400 flex items-center gap-0.5"><Apple size={10}/> iOS</span>
-                                    <span className="text-[10px] font-bold text-slate-400 flex items-center gap-0.5"><Play size={10}/> Android</span>
+                              <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.2 }}
+                                className="group bg-gradient-to-br from-purple-50 to-white rounded-2xl p-5 shadow-md hover:shadow-xl transition-all duration-300 border border-purple-100 hover:border-purple-300 hover:-translate-y-1"
+                              >
+                                <div className="flex flex-col items-center text-center">
+                                  <div className="relative mb-4">
+                                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                      <Users size={32} strokeWidth={2} />
+                                    </div>
+                                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow">
+                                      <div className="w-3.5 h-3.5 bg-green-500 rounded-full"></div>
+                                    </div>
+                                  </div>
+                                  <h4 className="font-black text-purple-900 text-lg mb-3">Phụ huynh</h4>
+                                  <div className="flex gap-2">
+                                    <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-md flex items-center gap-1">
+                                      <Apple size={10} /> iOS
+                                    </span>
+                                    <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-md flex items-center gap-1">
+                                      <Play size={10} /> Android
+                                    </span>
                                   </div>
                                 </div>
-                              </div>
-                            </div>
-
-                            {/* Mockup Image */}
-                            <div className="flex-1 flex justify-center items-center relative z-10">
-                              <div className="relative w-48 md:w-56 aspect-[9/19] bg-slate-900 rounded-[2.5rem] border-[6px] border-slate-800 shadow-2xl overflow-hidden p-1">
-                                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-5 bg-slate-800 rounded-b-xl z-20"></div>
-                                <img 
-                                  src="https://picsum.photos/seed/mobile-ui/400/800" 
-                                  alt="Mobile App UI" 
-                                  className="w-full h-full object-cover rounded-[2rem]"
-                                  referrerPolicy="no-referrer"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent pointer-events-none"></div>
-                              </div>
-                              {/* Decorative elements */}
-                              <div className="absolute -z-10 w-64 h-64 bg-blue-200/50 rounded-full blur-3xl"></div>
+                              </motion.div>
                             </div>
                           </div>
                         </div>
