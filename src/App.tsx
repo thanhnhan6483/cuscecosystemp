@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { 
-  ChevronRight, 
+import { motion } from 'motion/react';
+import {
+  ChevronRight,
   ExternalLink, 
   Mail, 
   Phone, 
@@ -71,83 +71,68 @@ const CoreCircle = () => (
 
 const SmartUniversityGrid = () => {
   return (
-    <div className="relative w-full max-w-[500px] mx-auto p-2">
+    <div className="relative w-full max-w-[650px] mx-auto p-4">
       {/* Grid Layout */}
-      <div className="grid grid-cols-2 gap-3 relative">
+      <div className="grid grid-cols-2 gap-4 relative">
         {/* Pillar 1 - Top Left - Blue */}
-        <motion.div 
-          whileHover={{ scale: 1.02, backgroundColor: '#b0c7e1' }}
-          whileTap={{ scale: 0.98 }}
-          className="bg-[#c3d4e9] rounded-2xl p-5 min-h-[150px] flex flex-col items-start justify-start text-left shadow-md border border-white/30 cursor-pointer transition-shadow hover:shadow-xl group"
-        >
-          <div className="w-10 h-10 bg-white/40 rounded-xl flex items-center justify-center mb-3 shadow-sm group-hover:bg-white/60 transition-colors">
-            <Users size={20} className="text-blue-700" />
+        <div className="bg-[#c3d4e9] rounded-2xl p-6 min-h-[180px] flex flex-col items-start justify-start text-left shadow-lg border-2 border-white/40 transition-all duration-300 hover:shadow-xl hover:bg-[#b8d0e8] group">
+          <div className="w-12 h-12 bg-white/50 rounded-xl flex items-center justify-center mb-3 shadow-sm group-hover:bg-white/60 transition-colors">
+            <Users size={24} className="text-blue-700" />
           </div>
-          <span className="text-[10px] font-bold text-blue-800/60 mb-1 tracking-widest">TRỤ CỘT 1</span>
-          <p className="text-slate-900 font-black text-sm leading-tight uppercase tracking-tight">
+          <span className="text-[11px] font-bold text-blue-800/60 mb-1 tracking-widest">TRỤ CỘT 1</span>
+          <p className="text-slate-900 font-black text-base leading-tight uppercase tracking-tight">
             CÔNG TÁC TUYỂN SINH,<br/>
             QUẢN LÝ SINH VIÊN
           </p>
-        </motion.div>
+        </div>
 
         {/* Pillar 2 - Top Right - Orange */}
-        <motion.div 
-          whileHover={{ scale: 1.02, backgroundColor: '#f5c9ae' }}
-          whileTap={{ scale: 0.98 }}
-          className="bg-[#f9d8c4] rounded-2xl p-5 min-h-[150px] flex flex-col items-end justify-start text-right shadow-md border border-white/30 cursor-pointer transition-shadow hover:shadow-xl group"
-        >
-          <div className="w-10 h-10 bg-white/40 rounded-xl flex items-center justify-center mb-3 shadow-sm group-hover:bg-white/60 transition-colors">
-            <GraduationCap size={20} className="text-orange-700" />
+        <div className="bg-[#f9d8c4] rounded-2xl p-6 min-h-[180px] flex flex-col items-end justify-start text-right shadow-lg border-2 border-white/40 transition-all duration-300 hover:shadow-xl hover:bg-[#f5cdbb] group">
+          <div className="w-12 h-12 bg-white/50 rounded-xl flex items-center justify-center mb-3 shadow-sm group-hover:bg-white/60 transition-colors">
+            <GraduationCap size={24} className="text-orange-700" />
           </div>
-          <span className="text-[10px] font-bold text-orange-800/60 mb-1 tracking-widest">TRỤ CỘT 2</span>
-          <p className="text-orange-900 font-black text-sm leading-tight uppercase tracking-tight">
+          <span className="text-[11px] font-bold text-orange-800/60 mb-1 tracking-widest">TRỤ CỘT 2</span>
+          <p className="text-orange-900 font-black text-base leading-tight uppercase tracking-tight">
             CÔNG TÁC ĐÀO TẠO,<br/>
             NGHIÊN CỨU KHOA HỌC
           </p>
-        </motion.div>
+        </div>
 
         {/* Pillar 3 - Bottom Left - Yellow */}
-        <motion.div 
-          whileHover={{ scale: 1.02, backgroundColor: '#f7e197' }}
-          whileTap={{ scale: 0.98 }}
-          className="bg-[#ffebad] rounded-2xl p-5 min-h-[150px] flex flex-col items-start justify-end text-left shadow-md border border-white/30 cursor-pointer transition-shadow hover:shadow-xl group"
-        >
-          <div className="w-10 h-10 bg-white/40 rounded-xl flex items-center justify-center mb-3 shadow-sm group-hover:bg-white/60 transition-colors">
-            <CircleDollarSign size={20} className="text-amber-700" />
+        <div className="bg-[#ffebad] rounded-2xl p-6 min-h-[180px] flex flex-col items-start justify-end text-left shadow-lg border-2 border-white/40 transition-all duration-300 hover:shadow-xl hover:bg-[#ffe59a] group">
+          <div className="w-12 h-12 bg-white/50 rounded-xl flex items-center justify-center mb-3 shadow-sm group-hover:bg-white/60 transition-colors">
+            <CircleDollarSign size={24} className="text-amber-700" />
           </div>
-          <span className="text-[10px] font-bold text-amber-800/60 mb-1 tracking-widest">TRỤ CỘT 3</span>
-          <p className="text-amber-900 font-black text-sm leading-tight uppercase tracking-tight">
+          <span className="text-[11px] font-bold text-amber-800/60 mb-1 tracking-widest">TRỤ CỘT 3</span>
+          <p className="text-amber-900 font-black text-base leading-tight uppercase tracking-tight">
             CÔNG TÁC<br/>
             TÀI CHÍNH
           </p>
-        </motion.div>
+        </div>
 
         {/* Pillar 4 - Bottom Right - Green */}
-        <motion.div 
-          whileHover={{ scale: 1.02, backgroundColor: '#bcdbb3' }}
-          whileTap={{ scale: 0.98 }}
-          className="bg-[#cde4c6] rounded-2xl p-5 min-h-[150px] flex flex-col items-end justify-end text-right shadow-md border border-white/30 cursor-pointer transition-shadow hover:shadow-xl group"
-        >
-          <div className="w-10 h-10 bg-white/40 rounded-xl flex items-center justify-center mb-3 shadow-sm group-hover:bg-white/60 transition-colors">
-            <Building2 size={20} className="text-emerald-700" />
+        <div className="bg-[#cde4c6] rounded-2xl p-6 min-h-[180px] flex flex-col items-end justify-end text-right shadow-lg border-2 border-white/40 transition-all duration-300 hover:shadow-xl hover:bg-[#c2dcb9] group">
+          <div className="w-12 h-12 bg-white/50 rounded-xl flex items-center justify-center mb-3 shadow-sm group-hover:bg-white/60 transition-colors">
+            <Building2 size={24} className="text-emerald-700" />
           </div>
-          <span className="text-[10px] font-bold text-emerald-800/60 mb-1 tracking-widest">TRỤ CỘT 4</span>
-          <p className="text-emerald-900 font-black text-sm leading-tight uppercase tracking-tight">
+          <span className="text-[11px] font-bold text-emerald-800/60 mb-1 tracking-widest">TRỤ CỘT 4</span>
+          <p className="text-emerald-900 font-black text-base leading-tight uppercase tracking-tight">
             CÔNG TÁC ĐIỀU HÀNH VÀ<br/>
             HOẠT ĐỘNG CHUYÊN MÔN
           </p>
-        </motion.div>
+        </div>
 
-        {/* Center Core - Circle */}
-        <Link to="/cusc-uiis" target="_blank" rel="noopener noreferrer" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white shadow-[0_15px_45px_rgba(27,75,163,0.3)] border-4 border-cusc-blue flex flex-col items-center justify-center z-10 rounded-full ring-4 ring-white/50 backdrop-blur-sm transition-transform hover:scale-105 group/core">
-          <div className="w-10 h-10 bg-cusc-blue/10 rounded-full flex items-center justify-center text-cusc-blue mb-1 group-hover/core:scale-110 transition-transform">
-            <GraduationCap size={24} strokeWidth={2.5} />
+        {/* Center Core - CUSC-UIIS (Focal Point) */}
+        <Link to="/cusc-uiis" target="_blank" rel="noopener noreferrer" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gradient-to-br from-white to-blue-50 shadow-[0_20px_60px_rgba(27,75,163,0.4)] border-4 border-cusc-blue flex flex-col items-center justify-center z-10 rounded-full ring-4 ring-cusc-gold/30 backdrop-blur-sm transition-all hover:scale-110 group/core cursor-pointer">
+          <div className="absolute inset-0 rounded-full bg-cusc-blue/5 animate-pulse" />
+          <div className="w-14 h-14 bg-gradient-to-br from-cusc-blue to-blue-600 rounded-full flex items-center justify-center text-white mb-2 group-hover/core:scale-110 group-hover/core:rotate-6 transition-all shadow-lg">
+            <GraduationCap size={28} strokeWidth={2.5} />
           </div>
-          <div className="flex flex-col items-center">
-            <span className="text-base font-black text-cusc-blue uppercase tracking-tight leading-none">CUSC-UIIS</span>
-            <div className="h-0.5 w-8 bg-cusc-gold mt-1.5 rounded-full group-hover/core:w-12 transition-all" />
-            <div className="flex items-center gap-1 text-[7px] font-bold text-slate-400 mt-1 uppercase tracking-widest opacity-0 group-hover/core:opacity-100 transition-opacity">
-              Chi tiết <ExternalLink size={7} />
+          <div className="flex flex-col items-center relative z-10">
+            <span className="text-xl font-black text-cusc-blue uppercase tracking-tight leading-none drop-shadow-sm">CUSC-UIIS</span>
+            <div className="h-1 w-12 bg-gradient-to-r from-cusc-gold to-yellow-500 mt-2 rounded-full shadow-sm" />
+            <div className="flex items-center gap-1.5 text-[8px] font-bold text-cusc-blue mt-1.5 uppercase tracking-widest opacity-0 group-hover/core:opacity-100 transition-all">
+              Xem chi tiết <ExternalLink size={9} />
             </div>
           </div>
         </Link>
@@ -240,10 +225,12 @@ const HeroSlider = () => {
 const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => void }) => (
   <section id="ecosystem" className="py-12 bg-slate-100 min-h-screen">
     <div className="max-w-[1600px] mx-auto px-4 relative">
-      
+
       <div className="text-center mb-12 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-black text-cusc-blue uppercase tracking-tight">Hệ sinh thái giải pháp số</h2>
-        <div className="w-24 h-1 bg-cusc-gold mx-auto mt-4 rounded-full"></div>
+        <h2 className="text-3xl md:text-4xl font-black text-cusc-blue uppercase tracking-tight">
+          Hệ sinh thái giải pháp số
+        </h2>
+        <div className="w-24 h-1.5 bg-gradient-to-r from-cusc-blue to-cusc-gold mx-auto mt-4 rounded-full"></div>
       </div>
 
       {/* Visual Connectors Layer */}
@@ -312,14 +299,14 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
         </div>
 
         {/* Cluster 2: Giải pháp đại học thông minh (CUSC Gold) */}
-        <div className="lg:col-span-5 bg-cusc-gold rounded-2xl p-6 shadow-2xl relative overflow-hidden group flex flex-col">
+        <div className="lg:col-span-5 bg-cusc-gold rounded-2xl p-8 shadow-2xl relative overflow-hidden group flex flex-col">
           <div className="absolute top-0 right-0 w-32 h-32 bg-black/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
-          <h3 className="text-lg font-black uppercase tracking-wider mb-4 flex items-center gap-3 border-b border-black/10 pb-4 text-slate-900">
+          <h3 className="text-lg font-black uppercase tracking-wider mb-6 flex items-center gap-3 border-b border-black/10 pb-4 text-slate-900">
             <GraduationCap size={24} className="text-cusc-blue" />
             {ECOSYSTEM_DATA.smartUniversity.title}
           </h3>
-          
-          <div className="flex-grow flex items-center justify-center py-4">
+
+          <div className="flex-grow flex items-center justify-center py-6">
             <SmartUniversityGrid />
           </div>
 
