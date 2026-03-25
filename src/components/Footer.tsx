@@ -12,11 +12,11 @@ export const ContactCTA = () => (
         Liên hệ ngay với đội ngũ chuyên gia của chúng tôi để nhận tư vấn giải pháp công nghệ tối ưu nhất cho cơ quan, tổ chức của bạn
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a 
+        <a
           href="tel:02923731072"
           className="flex items-center gap-2 bg-cusc-gold text-slate-900 px-8 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-yellow-400 transition-all hover:scale-105 shadow-lg"
         >
-          <Smartphone size={20} />
+          <Phone size={20} />
           <span className="hidden sm:inline">Tư vấn ngay </span>
         </a>
         <a 
