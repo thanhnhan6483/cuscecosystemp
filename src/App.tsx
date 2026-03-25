@@ -143,19 +143,29 @@ const SmartUniversityGrid = () => {
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1523050335392-9bc567597280?q=80&w=1920&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1920&auto=format&fit=crop",
     title: "Hệ thống Tích hợp thông tin Quản lý đào tạo",
     subtitle: "Giải pháp chuyển đổi số toàn diện, kiến tạo hệ sinh thái giáo dục thông minh"
   },
   {
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1920&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1920&auto=format&fit=crop",
     title: "Tự động hóa quy trình quản lý",
     subtitle: "Kết nối dữ liệu liên thông, chia sẻ tài nguyên số và tối ưu hóa vận hành"
   },
   {
-    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1920&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1920&auto=format&fit=crop",
     title: "Chuyển đổi số bền vững",
     subtitle: "Nâng tầm hiệu quả cho các trường Đại học, Cao đẳng trên toàn quốc"
+  },
+  {
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1920&auto=format&fit=crop",
+    title: "Trí tuệ nhân tạo AI",
+    subtitle: "Ứng dụng AI, Chatbot và phân tích dữ liệu thông minh"
+  },
+  {
+    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1920&auto=format&fit=crop",
+    title: "Quản trị số hiện đại",
+    subtitle: "Nền tảng quản lý tập trung, tối ưu hóa vận hành"
   }
 ];
 
