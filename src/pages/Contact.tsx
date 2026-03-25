@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { SEO } from '../components/SEO';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { Phone, Mail, User } from 'lucide-react';
@@ -57,6 +58,11 @@ const teamMembers = [
 export default function Contact() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
+      <SEO
+        title="Liên hệ CUSC - Đội ngũ tư vấn chuyên gia"
+        description="Liên hệ CUSC Software: 0292 3731072 | cusc.sales@ctu.edu.vn. Đội ngũ tư vấn chuyên nghiệp, hỗ trợ chuyển đổi số, giải pháp phần mềm giáo dục."
+        keywords="liên hệ CUSC, số điện thoại CUSC, email CUSC, tư vấn phần mềm, hỗ trợ khách hàng, chuyển đổi số"
+      />
       <Navbar />
       
       <main className="py-20 px-4">

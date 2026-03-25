@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from 'motion/react';
+import { SEO } from '../components/SEO';
 import { Navbar } from '../components/Navbar';
 import { Footer, ContactCTA } from '../components/Footer';
 import { FileCheck, ShieldCheck, Zap, BarChart3, Users, CheckCircle2, ClipboardList, Settings, Search, HelpCircle, ChevronDown, Clock, DollarSign, AlertTriangle, Lightbulb, Check, CreditCard, Info, FolderPlus, Shield, Share2, Boxes, Building2, User, Server, RefreshCw, ArrowRightLeft, Workflow, LayoutGrid, Database, Building, ExternalLink, X, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -93,6 +94,11 @@ export default function CuscIsooPage() {
 
   return (
     <div className="min-h-screen font-sans selection:bg-cusc-blue selection:text-white bg-slate-50">
+      <SEO
+        title="CUSC-ISOO - Phần mềm ISO điện tử | Quản lý chất lượng ISO 9001:2015"
+        description="Phần mềm ISO điện tử CUSC-ISOO: Số hóa quy trình ISO, quản lý hồ sơ thông minh, kiểm soát tài liệu, quy trình động. Giải pháp ISO 9001:2015 cho cơ quan, trường học."
+        keywords="CUSC-ISOO, ISO điện tử, phần mềm ISO 9001:2015, quản lý chất lượng, kiểm soát tài liệu, quy trình động, ISO điện tử đại học, số hóa ISO"
+      />
       <Navbar />
       
       {/* Hero Section */}
@@ -135,7 +141,7 @@ export default function CuscIsooPage() {
               <div className="absolute inset-0 bg-gradient-to-tr from-cusc-gold/30 to-cusc-blue/30 rounded-2xl blur-3xl"></div>
               <img
                 src={new URL('../assets/images/cusc-isoo_home.jpg', import.meta.url).href}
-                alt="CUSC-ISOO Dashboard"
+                alt="Giao diện Dashboard phần mềm ISO điện tử CUSC-ISOO"
                 className="relative rounded-2xl shadow-2xl border border-white/10 aspect-[16/10] object-cover"
               />
               
@@ -277,9 +283,9 @@ export default function CuscIsooPage() {
                   </div>
                 </div>
                 <div className="p-1 bg-slate-100">
-                   <img 
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000" 
-                    alt="CUSC-ISOO Interface" 
+                   <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
+                    alt="Giao diện phần mềm quản lý ISO điện tử CUSC-ISOO"
                     className="w-full rounded-lg shadow-inner aspect-[16/10] object-cover"
                     referrerPolicy="no-referrer"
                   />

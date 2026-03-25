@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+import { SEO } from './components/SEO';
 import {
   ChevronRight,
-  ExternalLink, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Facebook, 
-  Youtube, 
+  ExternalLink,
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Youtube,
   Linkedin,
   Zap,
   Users,
@@ -197,15 +198,15 @@ const HeroSlider = () => {
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
-            <motion.h2 
+            <motion.h1
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: idx === current ? 0 : 20, opacity: idx === current ? 1 : 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
               className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-4 tracking-tight drop-shadow-lg"
             >
               {slide.title}
-            </motion.h2>
-            <motion.p 
+            </motion.h1>
+            <motion.p
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: idx === current ? 0 : 20, opacity: idx === current ? 1 : 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
@@ -490,6 +491,11 @@ export default function App() {
 
   return (
     <div className="min-h-screen font-sans selection:bg-cusc-blue selection:text-white">
+      <SEO
+        title="Hệ sinh thái giải pháp số - Chuyển đổi số Đại học"
+        description="Giải pháp chuyển đổi số toàn diện cho trường Đại học, Cao đẳng: Quản lý đào tạo, ISO điện tử, AI Chatbot, tích hợp SSO. CUSC-ISOO, CUSC-UIIS, CUSC-IES với hơn 25 năm kinh nghiệm."
+        keywords="hệ sinh thái giải pháp số, chuyển đổi số đại học, CUSC-ISOO, CUSC-UIIS, quản lý đào tạo, ISO điện tử, AI chatbot, tích hợp SSO, phần mềm giáo dục, đại học thông minh"
+      />
       <Navbar />
       <main>
         <HeroSlider />
@@ -498,9 +504,9 @@ export default function App() {
       </main>
       <Footer />
 
-      <SolutionModal 
-        isOpen={!!selectedSolution} 
-        onClose={() => setSelectedSolution(null)} 
+      <SolutionModal
+        isOpen={!!selectedSolution}
+        onClose={() => setSelectedSolution(null)}
         solution={selectedSolution}
       />
     </div>

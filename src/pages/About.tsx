@@ -1,12 +1,18 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Award, Target, Eye, ShieldCheck, History, Heart, Zap, TrendingUp, RefreshCw, Code, GraduationCap, Lightbulb, CheckCircle2, Phone, Mail, Handshake } from 'lucide-react';
+import { SEO } from '../components/SEO';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 
 const About = () => {
   return (
     <div className="bg-white min-h-screen">
+      <SEO
+        title="Giới thiệu về CUSC - 25+ năm phát triển phần mềm"
+        description="Trung tâm Công nghệ Phần mềm Đại học Cần Thơ thành lập 2001. ISO 9001:2015, ISO 27001:2022. Tiên phong chuyển đổi số, phát triển phần mềm và đào tạo nhân lực CNTT."
+        keywords="giới thiệu CUSC, trung tâm phần mềm đại học cần thơ, ISO 9001:2015, ISO 27001:2022, phát triển phần mềm, đào tạo CNTT, chuyển đổi số"
+      />
       <Navbar />
       <main>
         {/* Hero Section */}
@@ -14,7 +20,7 @@ const About = () => {
           <div className="absolute inset-0">
             <img
               src={new URL('../assets/images/cusctapthe.jpg', import.meta.url).href}
-              alt="CUSC Team"
+              alt="Đội ngũ CUSC - Trung tâm Công nghệ Phần mềm Đại học Cần Thơ"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/20" />
@@ -97,7 +103,7 @@ const About = () => {
                   <div className="aspect-[4/5] rounded-[60px] overflow-hidden shadow-2xl border-[12px] border-white rotate-2 hover:rotate-0 transition-transform duration-700">
                     <img
                       src={new URL('../assets/images/longchim.jpg', import.meta.url).href}
-                      alt="CUSC Modern Office"
+                      alt="Văn phòng hiện đại của CUSC - Trung tâm Công nghệ Phần mềm Đại học Cần Thơ"
                       className="w-full h-full object-cover"
                     />
                   </div>

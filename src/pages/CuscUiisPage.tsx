@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from 'motion/react';
+import { SEO } from '../components/SEO';
 import { Navbar } from '../components/Navbar';
 import { Footer, ContactCTA } from '../components/Footer';
 import { 
@@ -209,6 +210,11 @@ export default function CuscUiisPage() {
 
   return (
     <div className="min-h-screen font-sans selection:bg-cusc-blue selection:text-white bg-slate-50">
+      <SEO
+        title="CUSC-UIIS - Hệ thống quản lý đào tạo Đại học | Đại học thông minh"
+        description="Giải pháp quản lý đào tạo toàn diện: Tuyển sinh, thời khóa biểu, quản lý sinh viên, học phí, E-learning. Chuyển đổi số đại học thông minh với CUSC-UIIS."
+        keywords="CUSC-UIIS, quản lý đào tạo, đại học thông minh, tuyển sinh trực tuyến, thời khóa biểu, quản lý sinh viên, học phí, E-learning, ERP giáo dục"
+      />
       <Navbar />
       
       {/* Hero Section */}
@@ -250,9 +256,9 @@ export default function CuscUiisPage() {
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-cusc-gold/30 to-cusc-blue/30 rounded-2xl blur-3xl"></div>
               <div className="relative bg-white p-2 rounded-2xl shadow-2xl border border-white/10">
-                <img 
-                  src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=2000" 
-                  alt="CUSC-UIIS Ecosystem" 
+                <img
+                  src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=2000"
+                  alt="Hệ sinh thái phần mềm quản lý đào tạo đại học CUSC-UIIS"
                   className="rounded-xl aspect-[16/10] object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -338,9 +344,9 @@ export default function CuscUiisPage() {
               className="relative"
             >
               <div className="bg-blue-50 rounded-[3rem] p-4 aspect-square flex items-center justify-center overflow-hidden shadow-inner border-4 border-white">
-                <img 
-                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1920&auto=format&fit=crop" 
-                  alt="Smart University Environment" 
+                <img
+                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1920&auto=format&fit=crop"
+                  alt="Môi trường đại học thông minh với chuyển đổi số"
                   className="w-full h-full object-cover rounded-[2.5rem]"
                   referrerPolicy="no-referrer"
                 />
