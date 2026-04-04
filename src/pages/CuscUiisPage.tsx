@@ -472,7 +472,7 @@ export default function CuscUiisPage() {
       </section>
 
       {/* 4 Pillars Section - Modern House Model */}
-      <section className="py-24 bg-slate-900 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-b from-white to-slate-50 relative overflow-hidden">
         {/* Background Decorations */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
@@ -486,7 +486,7 @@ export default function CuscUiisPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl font-black text-white uppercase tracking-tight mb-2">
+              <h2 className="text-4xl font-black text-cusc-blue uppercase tracking-tight mb-2">
                 Cơ sở giáo dục số
               </h2>
               <div className="w-24 h-1.5 bg-cusc-gold mx-auto mt-6 rounded-full shadow-lg"></div>
@@ -496,16 +496,16 @@ export default function CuscUiisPage() {
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Left Column: Vertical Tabs */}
             <div className="w-full lg:w-1/3 xl:w-1/4 flex flex-col gap-4">
-              <button 
+              <button
                 onClick={() => setActiveTab(0)}
                 className={`flex items-center justify-between p-5 rounded-2xl font-extrabold transition-all duration-300 border ${
-                  activeTab === 0 
-                  ? 'bg-[#2d5296] text-white shadow-md border-transparent' 
-                  : 'bg-white text-[#1e3a8a] hover:bg-slate-50 border-slate-200 shadow-sm'
+                  activeTab === 0
+                  ? 'bg-gradient-to-br from-cusc-blue to-blue-600 text-white shadow-md border-transparent'
+                  : 'bg-white text-cusc-blue hover:bg-slate-50 border-slate-200 shadow-sm'
                 }`}
               >
                 <div className="flex items-center gap-4">
-                  <LayoutGrid size={22} className={activeTab === 0 ? "text-white" : "text-[#1e3a8a]"} />
+                  <LayoutGrid size={22} className={activeTab === 0 ? "text-white" : "text-cusc-blue"} />
                   <span className="text-left text-[15px] uppercase">Tổng quan</span>
                 </div>
                 {activeTab === 0 && <ChevronRight size={20} />}
@@ -516,13 +516,13 @@ export default function CuscUiisPage() {
                   key={idx}
                   onClick={() => setActiveTab(idx + 1)}
                   className={`flex items-center justify-between p-5 rounded-2xl font-extrabold transition-all duration-300 border ${
-                    activeTab === idx + 1 
-                    ? `${pillar.color} text-slate-900 shadow-md border-transparent` 
-                    : 'bg-white text-[#1e3a8a] hover:bg-slate-50 border-slate-200 shadow-sm'
+                    activeTab === idx + 1
+                    ? `${pillar.color} text-slate-900 shadow-md border-transparent`
+                    : 'bg-white text-cusc-blue hover:bg-slate-50 border-slate-200 shadow-sm'
                   }`}
                 >
                   <div className="flex items-center gap-4">
-                    <pillar.icon size={22} className={activeTab === idx + 1 ? "text-slate-900" : "text-[#1e3a8a]"} />
+                    <pillar.icon size={22} className={activeTab === idx + 1 ? "text-slate-900" : "text-cusc-blue"} />
                     <span className="text-left text-[15px] uppercase">{pillar.title}</span>
                   </div>
                   {activeTab === idx + 1 && <ChevronRight size={20} />}
@@ -576,14 +576,14 @@ export default function CuscUiisPage() {
                       {/* House Structure */}
                       <div className="flex flex-col items-center w-full max-w-4xl mx-auto">
                         {/* 1. The Roof (Triangular) */}
-                        <motion.div 
+                        <motion.div
                           initial={{ opacity: 0, scale: 0.9, y: 20 }}
                           whileInView={{ opacity: 1, scale: 1, y: 0 }}
                           viewport={{ once: true }}
                           className="w-full relative z-30"
                         >
-                          <div 
-                            className="w-full h-24 md:h-32 bg-[#2d5296] relative flex items-end justify-center overflow-hidden shadow-2xl"
+                          <div
+                            className="w-full h-24 md:h-32 bg-gradient-to-br from-cusc-blue to-blue-600 relative flex items-end justify-center overflow-hidden shadow-2xl"
                             style={{ clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }}
                           >
                             {/* Roof Inner Decoration */}
@@ -593,11 +593,11 @@ export default function CuscUiisPage() {
                         </motion.div>
 
                         {/* 2. The Header (4 TRỤ CỘT Cơ sở giáo dục số) */}
-                        <motion.div 
+                        <motion.div
                           initial={{ opacity: 0, width: "80%" }}
                           whileInView={{ opacity: 1, width: "100%" }}
                           viewport={{ once: true }}
-                          className="w-full bg-[#2d5296] py-4 md:py-6 relative z-20 shadow-xl border-t-4 border-white/10"
+                          className="w-full bg-gradient-to-r from-cusc-blue to-blue-600 py-4 md:py-6 relative z-20 shadow-xl border-t-4 border-white/10"
                         >
                           <div className="text-center px-4">
                             <h3 className="text-white text-xl md:text-3xl font-black uppercase tracking-tight drop-shadow-lg">
@@ -610,7 +610,7 @@ export default function CuscUiisPage() {
                         </motion.div>
 
                         {/* 3. The Pillars */}
-                        <div className="w-full bg-white/40 backdrop-blur-sm p-4 relative z-10 border-x-8 border-[#2d5296] shadow-2xl">
+                        <div className="w-full bg-white/40 backdrop-blur-sm p-4 relative z-10 border-x-8 border-cusc-blue shadow-2xl">
                           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                             {pillars.map((pillar, idx) => (
                               <motion.div
@@ -644,11 +644,11 @@ export default function CuscUiisPage() {
                         </div>
 
                         {/* 4. The Foundation (Base) */}
-                        <motion.div 
+                        <motion.div
                           initial={{ opacity: 0, scaleX: 0.8 }}
                           whileInView={{ opacity: 1, scaleX: 1 }}
                           viewport={{ once: true }}
-                          className="w-full h-8 md:h-12 bg-gradient-to-r from-[#1e3a8a] via-[#2d5296] to-[#1e3a8a] rounded-b-2xl shadow-2xl relative z-20 flex items-center justify-center"
+                          className="w-full h-8 md:h-12 bg-gradient-to-r from-cusc-blue via-blue-600 to-cusc-blue rounded-b-2xl shadow-2xl relative z-20 flex items-center justify-center"
                         >
                           <div className="w-[98%] h-[60%] border border-white/10 rounded-lg"></div>
                         </motion.div>

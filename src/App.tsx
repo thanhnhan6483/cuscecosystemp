@@ -144,28 +144,28 @@ const SmartUniversityGrid = () => {
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1920&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1920&auto=format&fit=crop",
     title: "Hệ thống Tích hợp thông tin Quản lý đào tạo",
     subtitle: "Giải pháp chuyển đổi số toàn diện, kiến tạo hệ sinh thái giáo dục thông minh"
   },
   {
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1920&auto=format&fit=crop",
+    image: "https://newgensoft.com/wp-content/uploads/2025/03/Workflow-Management-scaled.jpg",
     title: "Tự động hóa quy trình quản lý",
     subtitle: "Kết nối dữ liệu liên thông, chia sẻ tài nguyên số và tối ưu hóa vận hành"
   },
   {
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1920&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1920&auto=format&fit=crop",
     title: "Chuyển đổi số bền vững",
     subtitle: "Nâng tầm hiệu quả cho các trường Đại học, Cao đẳng trên toàn quốc"
   },
   {
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1920&auto=format&fit=crop",
-    title: "Trí tuệ nhân tạo AI",
+    image: "https://www.cumanagement.com/sites/default/files/2021-08/hand-chatbot-technology-background.jpg",
+    title: "Ứng dụng AI trong thực tiễn",
     subtitle: "Ứng dụng AI, Chatbot và phân tích dữ liệu thông minh"
   },
   {
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1920&auto=format&fit=crop",
-    title: "Quản trị số hiện đại",
+    image: "https://images.stockcake.com/public/e/c/2/ec20243f-64c4-485d-aa55-b64c08c2c0a7/future-marketing-workspace-stockcake.jpg",
+    title: "Quản trị toàn diện tổ chức",
     subtitle: "Nền tảng quản lý tập trung, tối ưu hóa vận hành"
   }
 ];
@@ -249,7 +249,7 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 mb-4 relative z-10">
         
         {/* Cluster 1: CHÍNH QUYỀN VÀ DOANH NGHIỆP (CUSC Blue) */}
-        <div className="lg:col-span-4 bg-cusc-blue rounded-2xl p-6 text-white shadow-2xl flex flex-col relative overflow-hidden group">
+        <div className="lg:col-span-4 bg-gradient-to-br from-cusc-blue to-blue-500 rounded-2xl p-6 text-white shadow-2xl flex flex-col relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
           <h3 className="text-lg font-black uppercase tracking-wider mb-5 flex items-center gap-3 border-b border-white/20 pb-4">
             <Building2 size={24} className="text-cusc-gold" />
@@ -264,12 +264,12 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
                   
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="flex items-start gap-3 mb-2">
-                      <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center group-hover/card:scale-110 group-hover/card:bg-cusc-gold/20 transition-all duration-300 shadow-inner shrink-0 mt-0.5">
-                        <item.icon size={16} className="text-cusc-gold" />
+                      <div className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center group-hover/card:scale-110 group-hover/card:bg-cusc-gold/20 transition-all duration-300 shadow-inner shrink-0 mt-0.5">
+                        <item.icon size={18} className="text-cusc-gold" />
                       </div>
-                      <h4 className="text-sm font-black text-white group-hover/card:text-cusc-gold transition-colors leading-tight">{item.name}</h4>
+                      <h4 className="text-base font-black text-white group-hover/card:text-cusc-gold transition-colors leading-tight">{item.name}</h4>
                     </div>
-                    <p className="text-xs text-white/60 leading-tight group-hover/card:text-white/80 transition-colors">{item.desc}</p>
+                    <p className="text-sm text-white/60 leading-tight group-hover/card:text-white/80 transition-colors">{item.desc}</p>
                   </div>
                 </div>
               );
@@ -310,7 +310,7 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
         </div>
 
         {/* Cluster 2: Giải pháp đại học thông minh (CUSC Gold) */}
-        <div className="lg:col-span-5 bg-cusc-gold rounded-2xl p-8 shadow-2xl relative overflow-hidden group flex flex-col">
+        <div className="lg:col-span-5 bg-gradient-to-br from-amber-400 to-cusc-gold rounded-2xl p-8 shadow-2xl relative overflow-hidden group flex flex-col">
           <div className="absolute top-0 right-0 w-32 h-32 bg-black/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
           <h3 className="text-lg font-black uppercase tracking-wider mb-6 flex items-center gap-3 border-b border-black/10 pb-4 text-slate-900">
             <GraduationCap size={24} className="text-cusc-blue" />
@@ -325,8 +325,8 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-1 bg-cusc-blue/30 rounded-t-full" />
         </div>
 
-        {/* Cluster 3: Ứng dụng AI (Deep Blue/Slate) */}
-        <div className="lg:col-span-3 bg-indigo-700 rounded-2xl p-6 text-white shadow-2xl relative overflow-hidden group">
+        {/* Cluster 3: Ứng dụng AI (CUSC Blue) */}
+        <div className="lg:col-span-3 bg-gradient-to-br from-cusc-blue to-indigo-600 rounded-2xl p-6 text-white shadow-2xl relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
           <h3 className="text-lg font-black uppercase tracking-wider mb-8 flex items-center gap-3 border-b border-white/20 pb-4">
             <Bot size={24} className="text-cusc-gold" />
@@ -357,7 +357,7 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
           <div className="absolute top-0 left-[27.7%] w-4 h-1 bg-white/30 rounded-b-full z-20" />
           <div className="absolute top-0 left-[72.2%] w-4 h-1 bg-white/30 rounded-b-full z-20" />
           
-          <div className="bg-gradient-to-r from-orange-600 via-orange-500 to-orange-600 rounded-2xl p-4 shadow-2xl relative overflow-hidden border border-orange-400/30">
+          <div className="bg-gradient-to-r from-cusc-gold via-amber-500 to-cusc-gold rounded-2xl p-4 shadow-2xl relative overflow-hidden border border-white/30">
             
             <div className="relative z-30 flex items-center justify-around gap-4 px-8">
               {ECOSYSTEM_DATA.dataBackbone.services.map((service, idx) => (
@@ -384,32 +384,32 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
           <div className="absolute top-1/2 right-0 -translate-y-1/2 w-1 h-4 bg-white/30 rounded-l-full z-20" />
         </div>
 
-        {/* Cluster 4: Chia sẻ dữ liệu (Teal/Emerald) - Redesigned as separate cards */}
-        <div className="lg:col-span-3 lg:row-span-2 bg-emerald-900 rounded-2xl p-5 text-white shadow-2xl relative overflow-hidden group border border-emerald-400/20">
+        {/* Cluster 4: Chia sẻ dữ liệu (Darker Teal/Emerald) */}
+        <div className="lg:col-span-3 lg:row-span-2 bg-gradient-to-br from-teal-700 to-emerald-800 rounded-2xl p-5 text-white shadow-2xl relative overflow-hidden group border border-white/20">
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
           
-          <h3 className="text-sm font-black uppercase tracking-[0.2em] mb-4 flex items-center gap-2 text-emerald-300">
+          <h3 className="text-sm font-black uppercase tracking-[0.2em] mb-4 flex items-center gap-2 text-white">
             <Globe size={16} />
             {ECOSYSTEM_DATA.dataSharing.title}
           </h3>
 
           <div className="flex flex-col gap-3">
             {ECOSYSTEM_DATA.dataSharing.items.map((item, idx) => (
-              <div 
-                key={item.name} 
+              <div
+                key={item.name}
                 className={`
                   relative p-3 rounded-xl border transition-all hover:scale-[1.02]
-                  ${idx === 0 ? 'bg-emerald-800/40 border-emerald-500/30' : ''}
-                  ${idx === 1 ? 'bg-teal-800/40 border-teal-500/30' : ''}
-                  ${idx === 2 ? 'bg-cyan-800/40 border-cyan-500/30' : ''}
+                  ${idx === 0 ? 'bg-white/20 border-white/30' : ''}
+                  ${idx === 1 ? 'bg-white/15 border-white/25' : ''}
+                  ${idx === 2 ? 'bg-white/20 border-white/30' : ''}
                 `}
               >
                 <div className="flex items-center gap-3">
                   <div className={`
                     w-10 h-10 rounded-lg flex items-center justify-center shadow-inner
-                    ${idx === 0 ? 'bg-emerald-500/20 text-emerald-300' : ''}
-                    ${idx === 1 ? 'bg-teal-500/20 text-teal-300' : ''}
-                    ${idx === 2 ? 'bg-cyan-500/20 text-cyan-300' : ''}
+                    ${idx === 0 ? 'bg-white/20 text-white' : ''}
+                    ${idx === 1 ? 'bg-white/15 text-white' : ''}
+                    ${idx === 2 ? 'bg-white/20 text-white' : ''}
                   `}>
                     <Database size={18} />
                   </div>
@@ -422,24 +422,23 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
           </div>
         </div>
 
-        {/* Bottom Section: Infra + Hardware (Now styled like "Dịch vụ khác") */}
-        <div className="lg:col-span-9 bg-slate-800 rounded-xl p-6 shadow-xl relative overflow-hidden border border-slate-700">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16" />
-          
-          <h3 className="text-white font-black uppercase tracking-widest text-sm mb-6 flex items-center gap-3">
-            <Database size={20} className="text-cusc-gold" />
+        {/* Bottom Section: Infra + Hardware (Light theme) */}
+        <div className="lg:col-span-9 bg-slate-100 rounded-xl p-4 shadow-xl relative overflow-hidden border border-slate-200">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-slate-100 rounded-full -mr-16 -mt-16" />
+
+          <h3 className="text-slate-800 font-black uppercase tracking-widest text-base mb-4 flex items-center gap-3">
+            <Database size={20} className="text-cusc-blue" />
             HẠ TẦNG VÀ THIẾT BỊ
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 relative z-10">
             {[...ECOSYSTEM_DATA.infraServices, ...ECOSYSTEM_DATA.hardware].map((item) => (
-              <div key={item.name} className="bg-white/5 rounded-xl p-4 flex items-center gap-4 hover:bg-white/10 transition-all border border-white/5 hover:shadow-md">
-                <div className="w-12 h-12 bg-cusc-gold/20 rounded-lg flex items-center justify-center text-cusc-gold shrink-0">
-                  <item.icon size={24} />
+              <div key={item.name} className="bg-white rounded-lg p-3 flex items-center gap-3 hover:bg-slate-50 transition-all border border-slate-100 hover:shadow-md">
+                <div className="w-10 h-10 bg-cusc-blue/10 rounded-lg flex items-center justify-center text-cusc-blue shrink-0">
+                  <item.icon size={20} />
                 </div>
                 <div>
-                  <h4 className="text-sm font-black text-white leading-tight">{item.name}</h4>
-                  <p className="text-xs text-white/40 mt-1">{item.desc}</p>
+                  <h4 className="text-sm font-black text-slate-800 leading-tight">{item.name}</h4>
                 </div>
               </div>
             ))}
@@ -451,7 +450,7 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
       <div className="mt-8 bg-white rounded-xl p-6 shadow-xl border border-slate-200 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-32 h-32 bg-slate-50 rounded-full -mr-16 -mt-16" />
         <h3 className="text-slate-800 font-black uppercase tracking-widest text-lg mb-6 flex items-center gap-3 relative z-10">
-          <Settings size={24} className="text-cusc-blue" />
+          <Settings size={24} className="text-cusc-gold" />
           {ECOSYSTEM_DATA.otherServices.title}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 relative z-10">

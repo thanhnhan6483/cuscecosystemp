@@ -36,9 +36,9 @@ export const Navbar = () => (
         </div>
 
         {/* Hotline */}
-        <a 
-          href="tel:02923731072" 
-          className="hidden sm:flex items-center gap-2.5 bg-gradient-to-r from-cusc-blue to-blue-600 text-white px-5 py-3 rounded-full text-sm font-bold tracking-wider hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+        <a
+          href="tel:02923731072"
+          className="hidden sm:flex items-center gap-2.5 bg-cusc-gold text-slate-900 px-5 py-3 rounded-full text-sm font-bold tracking-wider hover:bg-yellow-400 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
         >
           <Phone size={18} className="animate-pulse" />
           <span>0292 3731072</span>
