@@ -17,7 +17,7 @@ export const ContactCTA = () => (
           className="flex items-center gap-2 bg-cusc-gold text-slate-900 px-8 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-yellow-400 transition-all hover:scale-105 shadow-lg"
         >
           <Phone size={20} />
-          <span className="hidden sm:inline">Tư vấn ngay </span>
+          Tư vấn ngay
         </a>
         <a
           href="mailto:cusc.sales@ctu.edu.vn"
@@ -40,7 +40,7 @@ export const Footer = () => (
 
       <div className="flex items-center justify-center gap-1.5 text-xs sm:text-sm text-blue-100">
         <MapPin size={14} className="text-blue-200 shrink-0" />
-        <span>Khu III, Đại học Cần Thơ, Số 01 Lý Tự Trọng, phường Ninh Kiều, thành phố Cần Thơ</span>
+        <span>Số 01 Lý Tự Trọng, phường Ninh Kiều, thành phố Cần Thơ</span>
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-6 text-xs sm:text-sm text-blue-100">

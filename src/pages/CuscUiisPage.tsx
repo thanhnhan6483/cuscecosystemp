@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { SEO } from '../components/SEO';
 import { Navbar } from '../components/Navbar';
 import { Footer, ContactCTA } from '../components/Footer';
+import sliderImage from '../assets/images/slider_UIIS.png';
 import { 
   GraduationCap, 
   Users, 
@@ -219,7 +220,6 @@ export default function CuscUiisPage() {
       
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 overflow-hidden bg-cusc-blue text-white">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523050335392-9bc567597280?q=80&w=1920&auto=format&fit=crop')] opacity-10 bg-cover bg-center mix-blend-overlay"></div>
         <div className="max-w-[1200px] mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div

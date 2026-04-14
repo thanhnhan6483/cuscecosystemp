@@ -7,6 +7,7 @@ import About from './pages/About.tsx';
 import Contact from './pages/Contact.tsx';
 import CuscIsooPage from './pages/CuscIsooPage.tsx';
 import CuscUiisPage from './pages/CuscUiisPage.tsx';
+import CuscGatePage from './pages/CuscGatePage.tsx';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/contact" element={<Contact />} />
           <Route path="/cusc-isoo" element={<CuscIsooPage />} />
           <Route path="/cusc-uiis" element={<CuscUiisPage />} />
+          <Route path="/c-gate" element={<CuscGatePage />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

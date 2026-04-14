@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { SEO } from './components/SEO';
+import sliderUIIS from './assets/images/slider_UIIS.png';
+import sliderIES from './assets/images/slider_IES.png';
+import sliderSTM from './assets/images/slider_STM.png';
 import {
   ChevronRight,
   ExternalLink,
@@ -144,9 +147,19 @@ const SmartUniversityGrid = () => {
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1920&auto=format&fit=crop",
+    image: sliderUIIS,
     title: "Hệ thống Tích hợp thông tin Quản lý đào tạo",
-    subtitle: "Giải pháp chuyển đổi số toàn diện, kiến tạo hệ sinh thái giáo dục thông minh"
+    subtitle: "Giải pháp chuyển đổi số toàn diện dành cho Trường Đại học, Cao đẳng, kiến tạo hệ sinh thái giáo dục thông minh"
+  },
+  {
+    image: sliderIES,
+    title: "Nền tảng Quản lý Sáng kiến Thông minh",
+    subtitle: "Tối ưu quy trình từ đăng ký, chấm điểm đến công nhận và mở rộng phạm vi ảnh hưởng"
+  },
+  {
+    image: sliderSTM,
+    title: "Hệ thống Quản lý Đề tài Nghiên cứu Khoa học",
+    subtitle: "Giải pháp toàn diện theo dõi, đánh giá và tổng kết vòng đời đề tài NCKH từ đăng ký đến nghiệm thu"
   },
   {
     image: "https://newgensoft.com/wp-content/uploads/2025/03/Workflow-Management-scaled.jpg",
@@ -154,19 +167,9 @@ const slides = [
     subtitle: "Kết nối dữ liệu liên thông, chia sẻ tài nguyên số và tối ưu hóa vận hành"
   },
   {
-    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1920&auto=format&fit=crop",
-    title: "Chuyển đổi số bền vững",
-    subtitle: "Nâng tầm hiệu quả cho các trường Đại học, Cao đẳng trên toàn quốc"
-  },
-  {
     image: "https://www.cumanagement.com/sites/default/files/2021-08/hand-chatbot-technology-background.jpg",
     title: "Ứng dụng AI trong thực tiễn",
     subtitle: "Ứng dụng AI, Chatbot và phân tích dữ liệu thông minh"
-  },
-  {
-    image: "https://images.stockcake.com/public/e/c/2/ec20243f-64c4-485d-aa55-b64c08c2c0a7/future-marketing-workspace-stockcake.jpg",
-    title: "Quản trị toàn diện tổ chức",
-    subtitle: "Nền tảng quản lý tập trung, tối ưu hóa vận hành"
   }
 ];
 
@@ -176,12 +179,12 @@ const HeroSlider = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 7000);
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <div id="intro" className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden bg-slate-900">
+    <div id="intro" className="relative w-full h-[250px] md:h-[400px] lg:h-[500px] overflow-hidden bg-slate-900">
       {slides.map((slide, idx) => (
         <motion.div
           key={idx}
@@ -195,14 +198,13 @@ const HeroSlider = () => {
             src={slide.image} 
             alt={slide.title} 
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
             <motion.h1
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: idx === current ? 0 : 20, opacity: idx === current ? 1 : 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-4 tracking-tight drop-shadow-lg"
+              className="text-3xl md:text-3xl lg:text-5xl font-black text-white mb-2 md:mb-4 tracking-tight drop-shadow-lg"
             >
               {slide.title}
             </motion.h1>
@@ -210,7 +212,7 @@ const HeroSlider = () => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: idx === current ? 0 : 20, opacity: idx === current ? 1 : 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-lg md:text-xl text-slate-200 max-w-2xl font-medium drop-shadow-md"
+              className="text-base md:text-sm lg:text-lg text-slate-200 max-w-2xl font-medium drop-shadow-md px-2"
             >
               {slide.subtitle}
             </motion.p>
@@ -261,15 +263,15 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
                 <div className="group/card relative bg-white/5 backdrop-blur-md rounded-xl p-3.5 hover:bg-white/10 transition-all duration-300 cursor-pointer border border-white/10 hover:border-cusc-gold/50 hover:shadow-[0_8px_30px_rgba(255,193,7,0.15)] hover:-translate-y-1 overflow-hidden h-full">
                   {/* Decorative gradient blob on hover */}
                   <div className="absolute -inset-2 bg-gradient-to-br from-cusc-gold/20 to-transparent opacity-0 group-hover/card:opacity-100 blur-xl transition-opacity duration-500" />
-                  
-                  <div className="relative z-10 flex flex-col h-full">
-                    <div className="flex items-start gap-3 mb-2">
-                      <div className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center group-hover/card:scale-110 group-hover/card:bg-cusc-gold/20 transition-all duration-300 shadow-inner shrink-0 mt-0.5">
-                        <item.icon size={18} className="text-cusc-gold" />
-                      </div>
-                      <h4 className="text-base font-black text-white group-hover/card:text-cusc-gold transition-colors leading-tight">{item.name}</h4>
+
+                  <div className="relative z-10 flex items-center gap-3 h-full">
+                    <div className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center group-hover/card:scale-110 group-hover/card:bg-cusc-gold/20 transition-all duration-300 shadow-inner shrink-0">
+                      <item.icon size={18} className="text-cusc-gold" />
                     </div>
-                    <p className="text-sm text-white/60 leading-tight group-hover/card:text-white/80 transition-colors">{item.desc}</p>
+                    <div className="flex flex-col">
+                      <h4 className="text-base font-black text-white group-hover/card:text-cusc-gold transition-colors leading-tight">{item.name}</h4>
+                      <p className="text-sm text-white/60 leading-tight group-hover/card:text-white/80 transition-colors">{item.desc}</p>
+                    </div>
                   </div>
                 </div>
               );
@@ -298,6 +300,14 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
                 );
               }
 
+              if (item.name === 'C-GATE') {
+                return (
+                  <Link key={item.name} to="/c-gate" target="_blank" rel="noopener noreferrer" className="block h-full">
+                    {CardContent}
+                  </Link>
+                );
+              }
+
               return (
                 <div key={item.name} className="h-full">
                   {CardContent}
@@ -312,7 +322,7 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
         {/* Cluster 2: Giải pháp đại học thông minh (CUSC Gold) */}
         <div className="lg:col-span-5 bg-gradient-to-br from-amber-400 to-cusc-gold rounded-2xl p-8 shadow-2xl relative overflow-hidden group flex flex-col">
           <div className="absolute top-0 right-0 w-32 h-32 bg-black/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
-          <h3 className="text-lg font-black uppercase tracking-wider mb-6 flex items-center gap-3 border-b border-black/10 pb-4 text-slate-900">
+          <h3 className="text-lg font-black uppercase tracking-wider mb-6 flex items-center gap-3 border-b border-black/10 pb-4 text-cusc-blue">
             <GraduationCap size={24} className="text-cusc-blue" />
             {ECOSYSTEM_DATA.smartUniversity.title}
           </h3>
@@ -343,8 +353,8 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
                   <item.icon size={20} />
                 </div>
                 <div>
-                  <h4 className="text-sm font-black text-white">{item.name}</h4>
-                  <p className="text-xs text-white/70">{item.desc}</p>
+                  <h4 className="text-base font-black text-white">{item.name}</h4>
+                  <p className="text-sm text-white/70">{item.desc}</p>
                 </div>
               </div>
             ))}
