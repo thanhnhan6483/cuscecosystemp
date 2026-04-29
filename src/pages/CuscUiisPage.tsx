@@ -49,18 +49,40 @@ import {
   Play,
   UserCheck
 } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function CuscUiisPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState(0);
 
+  useEffect(() => {
+    if (selectedImage === null) return;
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowRight') setSelectedImage(prev => prev === showcaseImages.length - 1 ? 0 : prev! + 1);
+      if (e.key === 'ArrowLeft') setSelectedImage(prev => prev === 0 ? showcaseImages.length - 1 : prev! - 1);
+      if (e.key === 'Escape') setSelectedImage(null);
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [selectedImage]);
+
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const scroll = (dir: 'left' | 'right') => {
+    scrollRef.current?.scrollBy({ left: dir === 'left' ? -480 : 480, behavior: 'smooth' });
+  };
+
   const showcaseImages = [
-    { url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000", title: "Quản lý đào tạo & Thời khóa biểu" },
-    { url: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=2000", title: "Giao diện quản lý nhân sự" },
-    { url: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=2000", title: "Quản lý tài chính & Học phí" },
-    { url: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&q=80&w=2000", title: "Hệ thống E-learning tích hợp" },
+    { url: new URL('../assets/images/cusc-uiis-giaodien/Giao diện đăng nhập 1.png', import.meta.url).href, title: "Giao diện đăng nhập 1" },
+    { url: new URL('../assets/images/cusc-uiis-giaodien/Giao diện đăng nhập 2.png', import.meta.url).href, title: "Giao diện đăng nhập 2" },
+    { url: new URL('../assets/images/cusc-uiis-giaodien/Giao diện khi vào đăng nhập.png', import.meta.url).href, title: "Giao diện khi vào đăng nhập" },
+    { url: new URL('../assets/images/cusc-uiis-giaodien/Giao diện ĐKHP.png', import.meta.url).href, title: "Giao diện ĐKHP" },
+    { url: new URL('../assets/images/cusc-uiis-giaodien/Giao diện TKB.png', import.meta.url).href, title: "Giao diện TKB" },
+    { url: new URL('../assets/images/cusc-uiis-giaodien/Giao diện xem điểm.png', import.meta.url).href, title: "Giao diện xem điểm" },
+    { url: new URL('../assets/images/cusc-uiis-giaodien/Giao diện xem KQ xét TN.png', import.meta.url).href, title: "Giao diện xem KQ xét TN" },
+    { url: new URL('../assets/images/cusc-uiis-giaodien/Giao diện KHHT.png', import.meta.url).href, title: "Giao diện KHHT" },
+    { url: new URL('../assets/images/cusc-uiis-giaodien/Giao diện lấy ý kiến.png', import.meta.url).href, title: "Giao diện lấy ý kiến" },
+    { url: new URL('../assets/images/cusc-uiis-giaodien/Giao diện HDSD.png', import.meta.url).href, title: "Giao diện HDSD" },
   ];
 
   const pillars = [
@@ -257,7 +279,7 @@ export default function CuscUiisPage() {
               <div className="absolute inset-0 bg-gradient-to-tr from-cusc-gold/30 to-cusc-blue/30 rounded-2xl blur-3xl"></div>
               <div className="relative bg-white p-2 rounded-2xl shadow-2xl border border-white/10">
                 <img
-                  src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=2000"
+                  src={new URL('../assets/images/cusc-uiis 1.png', import.meta.url).href}
                   alt="Hệ sinh thái phần mềm quản lý đào tạo đại học CUSC-UIIS"
                   className="rounded-xl aspect-[16/10] object-cover"
                   referrerPolicy="no-referrer"
@@ -345,7 +367,7 @@ export default function CuscUiisPage() {
             >
               <div className="bg-blue-50 rounded-[3rem] p-4 aspect-square flex items-center justify-center overflow-hidden shadow-inner border-4 border-white">
                 <img
-                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1920&auto=format&fit=crop"
+                  src={new URL('../assets/images/cusc-uiis 2.png', import.meta.url).href}
                   alt="Môi trường đại học thông minh với chuyển đổi số"
                   className="w-full h-full object-cover rounded-[2.5rem]"
                   referrerPolicy="no-referrer"
@@ -937,7 +959,7 @@ export default function CuscUiisPage() {
           </div>
 
           <div className="relative group">
-            <div className="flex gap-6 overflow-x-auto pb-8 scrollbar-hide snap-x snap-mandatory">
+            <div ref={scrollRef} className="flex gap-6 overflow-x-auto pb-8 scrollbar-hide snap-x snap-mandatory">
               {showcaseImages.map((img, idx) => (
                 <motion.div 
                   key={idx}
@@ -965,10 +987,10 @@ export default function CuscUiisPage() {
             
             {/* Scroll indicators */}
             <div className="absolute top-1/2 -translate-y-1/2 left-2 right-2 flex justify-between pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
-              <div className="w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-xl text-slate-800">
+              <div onClick={() => scroll('left')} className="pointer-events-auto cursor-pointer w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-xl text-slate-800">
                 <ChevronLeft size={24} />
               </div>
-              <div className="w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-xl text-slate-800">
+              <div onClick={() => scroll('right')} className="pointer-events-auto cursor-pointer w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-xl text-slate-800">
                 <ChevronRight size={24} />
               </div>
             </div>
@@ -1026,7 +1048,7 @@ export default function CuscUiisPage() {
               />
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
                 <h3 className="text-white text-3xl font-black tracking-tight">{showcaseImages[selectedImage].title}</h3>
-                <p className="text-white/60 mt-2">Hình ảnh {selectedImage + 1} / {showcaseImages.length}</p>
+                <p className="text-white/60 mt-2 text-sm">Hình ảnh {selectedImage + 1} / {showcaseImages.length}</p>
               </div>
             </motion.div>
           </motion.div>

@@ -3,11 +3,27 @@ import { SEO } from '../components/SEO';
 import { Navbar } from '../components/Navbar';
 import { Footer, ContactCTA } from '../components/Footer';
 import { FileCheck, ShieldCheck, Zap, BarChart3, Users, CheckCircle2, ClipboardList, Settings, Search, HelpCircle, ChevronDown, Clock, DollarSign, AlertTriangle, Lightbulb, Check, CreditCard, Info, FolderPlus, Shield, Share2, Boxes, Building2, User, Server, RefreshCw, ArrowRightLeft, Workflow, LayoutGrid, Database, Building, ExternalLink, X, ChevronLeft, ChevronRight } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function CuscIsooPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (selectedImage === null) return;
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowRight') setSelectedImage(prev => prev === showcaseImages.length - 1 ? 0 : prev! + 1);
+      if (e.key === 'ArrowLeft') setSelectedImage(prev => prev === 0 ? showcaseImages.length - 1 : prev! - 1);
+      if (e.key === 'Escape') setSelectedImage(null);
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [selectedImage]);
+
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const scroll = (dir: 'left' | 'right') => {
+    scrollRef.current?.scrollBy({ left: dir === 'left' ? -420 : 420, behavior: 'smooth' });
+  };
 
   const showcaseImages = [
     { url: new URL('../assets/images/cusc-isoo_home.jpg', import.meta.url).href, title: "Tổng quan hệ thống Dashboard" },
@@ -499,7 +515,7 @@ export default function CuscIsooPage() {
           </div>
 
           <div className="relative group">
-            <div className="flex gap-4 overflow-x-auto pb-6 scrollbar-hide snap-x snap-mandatory">
+            <div ref={scrollRef} className="flex gap-4 overflow-x-auto pb-6 scrollbar-hide snap-x snap-mandatory">
               {showcaseImages.map((img, idx) => (
                 <motion.div 
                   key={idx}
@@ -527,10 +543,10 @@ export default function CuscIsooPage() {
             
             {/* Scroll indicators/hints */}
             <div className="absolute top-1/2 -translate-y-1/2 left-2 right-2 flex justify-between pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
-              <div className="w-8 h-8 bg-white/80 backdrop-blur rounded-full flex items-center justify-center shadow-lg text-slate-800">
+              <div onClick={() => scroll('left')} className="pointer-events-auto cursor-pointer w-8 h-8 bg-white/80 backdrop-blur rounded-full flex items-center justify-center shadow-lg text-slate-800">
                 <ChevronLeft size={20} />
               </div>
-              <div className="w-8 h-8 bg-white/80 backdrop-blur rounded-full flex items-center justify-center shadow-lg text-slate-800">
+              <div onClick={() => scroll('right')} className="pointer-events-auto cursor-pointer w-8 h-8 bg-white/80 backdrop-blur rounded-full flex items-center justify-center shadow-lg text-slate-800">
                 <ChevronRight size={20} />
               </div>
             </div>
@@ -589,23 +605,7 @@ export default function CuscIsooPage() {
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
                 <h3 className="text-white text-2xl md:text-4xl font-black tracking-tight">{showcaseImages[selectedImage].title}</h3>
-                <div className="flex items-center justify-between mt-4">
-                  <p className="text-white/60 font-medium">Hình ảnh {selectedImage + 1} / {showcaseImages.length}</p>
-                  <div className="flex gap-4 md:hidden">
-                    <button 
-                      onClick={() => setSelectedImage((prev) => (prev !== null ? (prev - 1 + showcaseImages.length) % showcaseImages.length : null))}
-                      className="text-white p-2 bg-white/10 rounded-full"
-                    >
-                      <ChevronLeft size={24} />
-                    </button>
-                    <button 
-                      onClick={() => setSelectedImage((prev) => (prev !== null ? (prev + 1) % showcaseImages.length : null))}
-                      className="text-white p-2 bg-white/10 rounded-full"
-                    >
-                      <ChevronRight size={24} />
-                    </button>
-                  </div>
-                </div>
+                <p className="text-white/60 mt-2 font-medium">Hình ảnh {selectedImage + 1} / {showcaseImages.length}</p>
               </div>
             </motion.div>
           </motion.div>
