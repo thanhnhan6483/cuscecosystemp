@@ -561,7 +561,7 @@ export default function CuscUiisPage() {
               >
                 <div className="flex items-center gap-4">
                   <LinkIcon size={22} className={activeTab === 5 ? "text-white" : "text-red-600"} />
-                  <span className="text-left text-[15px] uppercase">Liên kết ngoài</span>
+                  <span className="text-left text-[15px] uppercase">Tích hợp và chia sẻ</span>
                 </div>
                 {activeTab === 5 && <ChevronRight size={20} />}
               </button>
@@ -694,7 +694,7 @@ export default function CuscUiisPage() {
                         </div>
                         <div>
                           <h3 className="text-2xl font-black text-cusc-blue uppercase tracking-tight">
-                            LIÊN KẾT NGOÀI
+                            TÍCH HỢP VÀ CHIA SẺ
                           </h3>
                           <p className="text-slate-500 font-bold mt-1">
                             Tích hợp với các dịch vụ thanh toán, ngân hàng, hóa đơn điện tử và chữ ký số
