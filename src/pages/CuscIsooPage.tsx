@@ -26,12 +26,17 @@ export default function CuscIsooPage() {
   };
 
   const showcaseImages = [
-    { url: new URL('../assets/images/cusc-isoo_home.jpg', import.meta.url).href, title: "Tổng quan hệ thống Dashboard" },
-    { url: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2000", title: "Quản lý quy trình ISO" },
-    { url: "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=2000", title: "Báo cáo thống kê chi tiết" },
-    { url: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=2000", title: "Thiết lập quy trình động" },
-    { url: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=2000", title: "Tra cứu hồ sơ thông minh" },
-    { url: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000", title: "Phân quyền & Bảo mật" },
+    { url: new URL('../assets/images/cusc-isoo/VaiTro.PNG', import.meta.url).href, title: "Phân quyền vai trò" },
+    { url: new URL('../assets/images/cusc-isoo/TinhHinhThuHien.PNG', import.meta.url).href, title: "Tình hình thực hiện" },
+    { url: new URL('../assets/images/cusc-isoo/ChatBot.PNG', import.meta.url).href, title: "ChatBot hỗ trợ nghiệp vụ" },
+    { url: new URL('../assets/images/cusc-isoo/ChiTietHoSo.PNG', import.meta.url).href, title: "Chi tiết hồ sơ" },
+    { url: new URL('../assets/images/cusc-isoo/DanhGiaNoiBo.png', import.meta.url).href, title: "Đánh giá nội bộ" },
+    { url: new URL('../assets/images/cusc-isoo/DuThaoISO.PNG', import.meta.url).href, title: "Dự thảo ISO" },
+    { url: new URL('../assets/images/cusc-isoo/HoSo.PNG', import.meta.url).href, title: "Quản lý hồ sơ" },
+    { url: new URL('../assets/images/cusc-isoo/KhungKeHoach.PNG', import.meta.url).href, title: "Khung kế hoạch" },
+    { url: new URL('../assets/images/cusc-isoo/mucTieuChatLuong.jpg', import.meta.url).href, title: "Mục tiêu chất lượng" },
+    { url: new URL('../assets/images/cusc-isoo/SSO.PNG', import.meta.url).href, title: "Đăng nhập SSO" },
+    { url: new URL('../assets/images/cusc-isoo/TienTrinh.PNG', import.meta.url).href, title: "Tiến trình xử lý" },
   ];
 
   const features = [
@@ -102,9 +107,9 @@ export default function CuscIsooPage() {
   ];
 
   const faqs = [
-    { q: "CUSC-ISOO có hỗ trợ các tiêu chuẩn ISO nào?", a: "Hệ thống được thiết kế linh hoạt để hỗ trợ đa dạng các tiêu chuẩn như ISO 9001, ISO 14001, ISO 27001, ISO 45001 và các tiêu chuẩn quản lý chất lượng đặc thù khác." },
+    { q: "CUSC-ISOO có hỗ trợ các tiêu chuẩn ISO nào?", a: "Hệ thống được thiết kế linh hoạt để hỗ trợ đa dạng các tiêu chuẩn như ISO 9001, ISO 19091 và các tiêu chuẩn quản lý chất lượng đặc thù khác." },
     { q: "Dữ liệu trên hệ thống có được bảo mật không?", a: "CUSC-ISOO áp dụng các tiêu chuẩn bảo mật cao nhất, mã hóa dữ liệu truyền tải và lưu trữ, cùng hệ thống phân quyền đa lớp đảm bảo an toàn tuyệt đối." },
-    { q: "Phần mềm có thể tích hợp với các hệ thống khác không?", a: "Có, CUSC-ISOO cung cấp API mở để tích hợp với các hệ thống ERP, HRM, E-Office hiện có của doanh nghiệp." },
+    { q: "Phần mềm có thể tích hợp với các hệ thống khác không?", a: "Có, CUSC-ISOO cung cấp API mở để tích hợp với các Hệ thống thông tin giải quyết TTHC, Quản lý văn bản điều hành, Hệ thống chứng thực SSO." },
     { q: "Thời gian triển khai trung bình là bao lâu?", a: "Tùy thuộc vào quy mô và độ phức tạp của quy trình, thời gian triển khai trung bình từ 4-8 tuần." },
   ];
 
@@ -509,8 +514,8 @@ export default function CuscIsooPage() {
                 Giao diện <span className="text-orange-500">CUSC-ISOO</span>
               </h2>
             </div>
-            <p className="hidden md:block text-slate-500 text-xs font-medium max-w-[300px] text-right">
-              Hệ thống quản lý trực quan, hiện đại, tối ưu hóa mọi thao tác nghiệp vụ ISO.
+            <p className="hidden md:block text-slate-500 text-xs font-medium max-w-[300px] text-right uppercase tracking-widest">
+              Hệ thống quản lý chất lượng TCVN ISO 9001:2015
             </p>
           </div>
 
