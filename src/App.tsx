@@ -7,6 +7,7 @@ import sliderIES from './assets/images/slider_IES.png';
 import sliderSTM from './assets/images/slider_STM.png';
 import {
   ChevronRight,
+  ChevronLeft,
   ExternalLink,
   Mail,
   Phone,
@@ -164,7 +165,7 @@ const slides = [
   {
     image: "https://newgensoft.com/wp-content/uploads/2025/03/Workflow-Management-scaled.jpg",
     title: "Tự động hóa quy trình quản lý",
-    subtitle: "Kết nối dữ liệu liên thông, chia sẻ tài nguyên số và tối ưu hóa vận hành"
+    subtitle: "Tự động hóa luồng công việc, giảm thao tác thủ công và tăng tốc độ xử lý nghiệp vụ"
   },
   {
     image: "https://www.cumanagement.com/sites/default/files/2021-08/hand-chatbot-technology-background.jpg",
@@ -184,7 +185,7 @@ const HeroSlider = () => {
   }, []);
 
   return (
-    <div id="intro" className="relative w-full h-[250px] md:h-[400px] lg:h-[500px] overflow-hidden bg-slate-900">
+    <div id="intro" className="relative w-full h-[250px] md:h-[400px] lg:h-[670px] overflow-hidden bg-slate-900">
       {slides.map((slide, idx) => (
         <motion.div
           key={idx}
@@ -231,6 +232,22 @@ const HeroSlider = () => {
           />
         ))}
       </div>
+
+      {/* Prev / Next Arrows */}
+      <button
+        onClick={() => setCurrent((prev) => (prev - 1 + slides.length) % slides.length)}
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 md:w-12 md:h-12 bg-black/30 hover:bg-black/50 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all cursor-pointer"
+        aria-label="Slide trước"
+      >
+        <ChevronLeft size={24} />
+      </button>
+      <button
+        onClick={() => setCurrent((prev) => (prev + 1) % slides.length)}
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 md:w-12 md:h-12 bg-black/30 hover:bg-black/50 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all cursor-pointer"
+        aria-label="Slide tiếp"
+      >
+        <ChevronRight size={24} />
+      </button>
     </div>
   );
 };

@@ -23,7 +23,7 @@ export const Navbar = () => {
             </div>
           </div>
           <div className="border-l-2 border-cusc-gold/50 pl-3 py-1">
-            <h1 className="text-slate-500 font-bold text-xs md:text-xs uppercase tracking-wider leading-none">
+            <h1 className="text-slate-500 font-bold text-xl md:text-xl uppercase tracking-wider leading-none mb-1.5">
               ĐẠI HỌC CẦN THƠ
             </h1>
             <p className="text-cusc-blue font-black text-base md:text-xl lg:text-2xl leading-tight uppercase tracking-tight">
