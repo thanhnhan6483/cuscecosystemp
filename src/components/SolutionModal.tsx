@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, MessageSquare, Cpu, CheckCircle2, ArrowRight, User, Bot, Sparkles, Lightbulb, ShieldCheck, Trophy, FileText } from 'lucide-react';
+import { X, MessageSquare, Cpu, CheckCircle2, ArrowRight, User, Bot, Sparkles, Lightbulb, ShieldCheck, Trophy, FileText, Users } from 'lucide-react';
 import { AISolution } from '../data/aiSolutions';
 
 interface SolutionModalProps {
@@ -139,6 +139,23 @@ export const SolutionModal: React.FC<SolutionModalProps> = ({ isOpen, onClose, s
                             <CheckCircle2 size={18} className="text-emerald-600 shrink-0 mt-0.5" />
                             <span className="text-sm font-semibold text-emerald-900 leading-snug">{diff}</span>
                           </div>
+                        ))}
+                      </div>
+                    </section>
+                  )}
+
+                  {/* Clients */}
+                  {solution.clients && solution.clients.length > 0 && (
+                    <section>
+                      <h3 className={`text-base font-black ${theme.heading} uppercase mb-3 flex items-center gap-2 tracking-wide`}>
+                        <Users size={18} className={theme.iconColor} />
+                        Khách hàng tiêu biểu
+                      </h3>
+                      <div className="flex flex-wrap gap-2">
+                        {solution.clients.map((client, idx) => (
+                          <span key={idx} className="px-3 py-1.5 bg-blue-50 border border-blue-200 rounded-full text-sm font-semibold text-blue-800">
+                            {client}
+                          </span>
                         ))}
                       </div>
                     </section>

@@ -27,6 +27,7 @@ export interface AISolution {
   differences?: string[];
   longDescription?: string;
   type?: 'ai' | 'service';
+  clients?: string[];
 }
 
 export const AI_SOLUTIONS: Record<string, AISolution> = {

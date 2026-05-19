@@ -38,6 +38,15 @@ export const OTHER_SERVICES: Record<string, AISolution> = {
       'Giao diện chuẩn WCAG 2.2 AA — tiếp cận được mọi đối tượng, kể cả người khuyết tật',
       'Hỗ trợ đa ngôn ngữ, đa đơn vị trên cùng nền tảng (multi-tenant)',
     ],
+    clients: [
+      'Đại học Cần Thơ',
+      'Trường Đại học Việt Đức',
+      'Trường Cao đẳng nghề Sóc Trăng',
+      'Trung tâm Y tế Huyện Châu Thành',
+      'Trung tâm Dịch vụ Khuyến Nông TP. Cần Thơ',
+      'Hội xây dựng TP. Cần Thơ',
+      'Công ty CP ĐT&PT Nhà Cà Mau',
+    ],
   },
   'cho-thuê-phần-mềm': {
     id: 'cho-thuê-phần-mềm',
