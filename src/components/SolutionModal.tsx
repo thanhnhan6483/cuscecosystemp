@@ -18,17 +18,17 @@ export const SolutionModal: React.FC<SolutionModalProps> = ({ isOpen, onClose, s
 
   // Theme colors
   const theme = {
-    header: isService ? 'bg-slate-50 text-slate-900 border-b border-slate-200' : 'bg-cusc-blue text-white',
-    accent: isService ? 'bg-slate-200' : 'bg-cusc-gold',
-    accentText: isService ? 'text-cusc-blue' : 'text-slate-900',
-    subtitle: isService ? 'text-slate-500' : 'text-blue-100',
-    closeBtn: isService ? 'bg-slate-200 text-slate-500 hover:bg-slate-300' : 'bg-white/10 text-white hover:bg-white/20',
-    bodyBg: isService ? 'bg-white' : 'bg-slate-50/50',
-    heading: isService ? 'text-slate-900' : 'text-cusc-blue',
-    iconColor: isService ? 'text-slate-400' : 'text-cusc-gold',
-    card: isService ? 'bg-slate-50/50 border-slate-200' : 'bg-white border-slate-100',
-    featureIconBg: isService ? 'bg-slate-200/50' : 'bg-cusc-blue/5',
-    featureIconColor: isService ? 'text-slate-600' : 'text-cusc-blue'
+    header: isService ? 'bg-gradient-to-r from-cusc-blue to-blue-700 text-white' : 'bg-cusc-blue text-white',
+    accent: isService ? 'bg-white/20' : 'bg-cusc-gold',
+    accentText: isService ? 'text-white' : 'text-slate-900',
+    subtitle: isService ? 'text-blue-100' : 'text-blue-100',
+    closeBtn: isService ? 'bg-white/15 text-white hover:bg-white/25' : 'bg-white/10 text-white hover:bg-white/20',
+    bodyBg: isService ? 'bg-slate-50' : 'bg-slate-50/50',
+    heading: isService ? 'text-cusc-blue' : 'text-cusc-blue',
+    iconColor: isService ? 'text-cusc-blue' : 'text-cusc-gold',
+    card: isService ? 'bg-white border-slate-200' : 'bg-white border-slate-100',
+    featureIconBg: isService ? 'bg-cusc-blue/10' : 'bg-cusc-blue/5',
+    featureIconColor: isService ? 'text-cusc-blue' : 'text-cusc-blue'
   };
 
   return (
@@ -84,7 +84,7 @@ export const SolutionModal: React.FC<SolutionModalProps> = ({ isOpen, onClose, s
                       Giới thiệu dịch vụ
                     </h3>
                     <div className={`${theme.card} p-6 rounded-2xl shadow-sm border`}>
-                      <p className="text-slate-600 leading-relaxed font-medium">
+                      <p className="text-slate-700 leading-relaxed font-medium">
                         {solution.overview}
                       </p>
                     </div>
@@ -98,7 +98,7 @@ export const SolutionModal: React.FC<SolutionModalProps> = ({ isOpen, onClose, s
                         Mô tả dịch vụ
                       </h3>
                       <div className={`${theme.card} p-8 rounded-2xl shadow-sm border prose prose-slate max-w-none`}>
-                        <div className="text-slate-700 leading-relaxed whitespace-pre-line font-medium text-justify">
+                        <div className="text-slate-800 leading-relaxed whitespace-pre-line font-medium text-justify">
                           {solution.longDescription}
                         </div>
                       </div>
