@@ -38,7 +38,7 @@ export const SocialFloat = () => (
         key={label}
         href={href}
         title={label}
-        className={`${bg} text-white w-11 h-11 rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:-translate-y-0.5 transition-transform duration-200`}
+        className={`${bg} text-white w-12 h-12 rounded-full flex items-center justify-center shadow-[0_4px_14px_rgba(0,0,0,0.35)] border-2 border-white hover:scale-110 hover:-translate-y-0.5 transition-transform duration-200`}
       >
         {icon}
       </a>
