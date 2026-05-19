@@ -1,7 +1,41 @@
-import { Settings, FileCheck, LayoutDashboard, BookOpen, GraduationCap, ShieldCheck, Zap, Cloud, Code2, Layers, Smartphone, Network, Cpu, Globe, Search, Palette, BarChart3, Share2, Wifi, Thermometer, Bell, Activity, Droplets, FlaskConical, FolderKanban, MapPin, TrendingUp, FileSearch, Clock, DollarSign } from 'lucide-react';
+import { Settings, FileCheck, LayoutDashboard, BookOpen, GraduationCap, ShieldCheck, Zap, Cloud, Code2, Layers, Smartphone, Network, Cpu, Globe, Search, Palette, BarChart3, Share2, Wifi, Thermometer, Bell, Activity, Droplets, FlaskConical, FolderKanban, MapPin, TrendingUp, FileSearch, Clock, DollarSign, Users, UserCheck, CalendarDays, Receipt, PieChart, Lock } from 'lucide-react';
 import { AISolution } from './aiSolutions';
 
 export const OTHER_SERVICES: Record<string, AISolution> = {
+  'cusc-hrm': {
+    id: 'cusc-hrm',
+    name: 'CUSC-HRM',
+    subtitle: 'Quản lý nhân sự & tiền lương toàn diện',
+    icon: Users,
+    type: 'service',
+    overview: 'CUSC-HRM là giải pháp quản lý nhân sự và tiền lương được xây dựng theo quy trình thống nhất, đáp ứng đầy đủ các quy định pháp luật hiện hành. Hệ thống bao gồm đầy đủ các module: nhân sự, chấm công, nghỉ phép, lương, thưởng, thuế TNCN và BHXH — phù hợp với đơn vị hoạt động đa ngành, đa lĩnh vực.',
+    features: [
+      { icon: UserCheck, title: 'Quản lý hồ sơ nhân sự', desc: 'Lưu trữ đầy đủ thông tin nhân viên, hợp đồng, quá trình công tác, khen thưởng, kỷ luật.' },
+      { icon: CalendarDays, title: 'Chấm công đa chi nhánh', desc: 'Kết nối máy chấm công, tổng hợp dữ liệu từ nhiều chi nhánh, tùy biến ca làm việc linh hoạt.' },
+      { icon: DollarSign, title: 'Tính lương & thưởng tự động', desc: 'Hỗ trợ nhiều phương thức tính lương, tự động tính thưởng, giảm sai sót và tiết kiệm thời gian.' },
+      { icon: Receipt, title: 'BHXH & thuế TNCN', desc: 'Tự động lập bảng lương an sinh xã hội, kê khai BHXH, tính thuế TNCN đúng quy định.' },
+      { icon: Lock, title: 'Phân quyền vai trò', desc: 'Kiểm soát người dùng theo chức năng: nhập liệu, xem báo cáo, quản trị — bảo mật dữ liệu nhân sự.' },
+      { icon: PieChart, title: 'Báo cáo trực quan', desc: 'Hệ thống báo cáo tối ưu, nhanh chóng, chính xác — hỗ trợ ra quyết định quản lý hiệu quả.' },
+    ],
+    technologies: [
+      'Web-based (Cross-platform)',
+      'Tích hợp máy chấm công',
+      'Xuất Excel / PDF',
+      'Phân quyền RBAC',
+      'Backup & Restore tự động',
+    ],
+    benefits: [
+      { value: '100%', label: 'Tuân thủ quy định pháp luật', color: 'emerald' },
+      { value: '↓80%', label: 'Giảm thời gian tính lương', color: 'blue' },
+      { value: '0 lỗi', label: 'Sai sót chấm công', color: 'emerald' },
+      { value: '∞', label: 'Tùy biến theo đơn vị', color: 'blue' },
+    ],
+    differences: [
+      'Tùy biến cách chấm công và tính lương phù hợp với từng đơn vị đa ngành, đa lĩnh vực',
+      'Kết nối trực tiếp máy chấm công, đối chiếu tự động — hạn chế tối đa sai sót thủ công',
+      'Đảm bảo tuân thủ linh động theo các quy định và chế độ hiện hành về nhân sự, BHXH',
+    ],
+  },
   'cusc-ipm': {
     id: 'cusc-ipm',
     name: 'CUSC-IPM',
