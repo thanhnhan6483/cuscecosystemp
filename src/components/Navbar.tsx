@@ -22,8 +22,8 @@ export const Navbar = () => {
               />
             </div>
           </div>
-          <div className="border-l-2 border-cusc-gold/50 pl-3 py-1">
-            <h1 className="text-slate-500 font-bold text-xl md:text-xl uppercase tracking-wider leading-none mb-1.5">
+          <div className="border-l-2 border-cusc-gold pl-3 py-1">
+            <h1 className="text-slate-600 font-bold text-xl md:text-xl uppercase leading-none mb-1.5">
               ĐẠI HỌC CẦN THƠ
             </h1>
             <p className="text-cusc-blue font-black text-base md:text-xl lg:text-2xl leading-tight uppercase tracking-tight">
@@ -35,16 +35,16 @@ export const Navbar = () => {
         {/* Right side: Navigation + Hotline + Mobile Toggle */}
         <div className="flex items-center gap-3">
           {/* Desktop Navigation Menu */}
-          <div className="hidden md:flex gap-1 text-base font-bold uppercase tracking-wider text-slate-500 bg-slate-100/50 px-4 py-2 rounded-lg">
-            <Link to="/" className="px-4 py-2 hover:text-cusc-blue hover:bg-white rounded-md transition-all duration-200">Trang chủ</Link>
-            <Link to="/about" className="px-4 py-2 hover:text-cusc-blue hover:bg-white rounded-md transition-all duration-200">Giới thiệu</Link>
-            <Link to="/contact" className="px-4 py-2 hover:text-cusc-blue hover:bg-white rounded-md transition-all duration-200">Liên hệ</Link>
+          <div className="hidden md:flex gap-1 text-base font-bold uppercase text-slate-700">
+            <a href="https://cusc.vn/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 hover:text-cusc-blue hover:bg-slate-100 rounded-md transition-all duration-200">Trang chủ</a>
+            <Link to="/" className="px-4 py-2 hover:text-cusc-blue hover:bg-slate-100 rounded-md transition-all duration-200">Sản phẩm</Link>
+            <Link to="/contact" className="px-4 py-2 hover:text-cusc-blue hover:bg-slate-100 rounded-md transition-all duration-200">Liên hệ tư vấn</Link>
           </div>
 
           {/* Hotline */}
           <a
             href="tel:02923731072"
-            className="hidden sm:flex items-center gap-2 bg-cusc-gold text-slate-900 px-4 py-2.5 rounded-full text-sm font-bold tracking-wider hover:bg-yellow-400 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+            className="hidden sm:flex items-center gap-2 bg-cusc-gold text-cusc-blue px-4 py-2.5 rounded-full text-sm font-bold hover:bg-yellow-400 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
             <Phone size={16} className="animate-pulse" />
             <span>0292 3731072</span>
@@ -64,31 +64,33 @@ export const Navbar = () => {
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-slate-100 bg-white/95 backdrop-blur-md py-4 space-y-1">
+          <a
+            href="https://cusc.vn/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block px-4 py-3 text-base font-bold uppercase text-slate-700 hover:text-cusc-blue hover:bg-slate-50 rounded-lg transition-colors"
+          >
+            Trang chủ
+          </a>
           <Link
             to="/"
             onClick={() => setMobileMenuOpen(false)}
-            className="block px-4 py-3 text-base font-bold uppercase tracking-wider text-slate-600 hover:text-cusc-blue hover:bg-slate-50 rounded-lg transition-colors"
+            className="block px-4 py-3 text-base font-bold uppercase text-slate-700 hover:text-cusc-blue hover:bg-slate-50 rounded-lg transition-colors"
           >
-            Trang chủ
-          </Link>
-          <Link
-            to="/about"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block px-4 py-3 text-base font-bold uppercase tracking-wider text-slate-600 hover:text-cusc-blue hover:bg-slate-50 rounded-lg transition-colors"
-          >
-            Giới thiệu
+            Sản phẩm
           </Link>
           <Link
             to="/contact"
             onClick={() => setMobileMenuOpen(false)}
-            className="block px-4 py-3 text-base font-bold uppercase tracking-wider text-slate-600 hover:text-cusc-blue hover:bg-slate-50 rounded-lg transition-colors"
+            className="block px-4 py-3 text-base font-bold uppercase text-slate-700 hover:text-cusc-blue hover:bg-slate-50 rounded-lg transition-colors"
           >
-            Liên hệ
+            Liên hệ tư vấn
           </Link>
           <div className="pt-2 px-4">
             <a
               href="tel:02923731072"
-              className="flex items-center justify-center gap-2 bg-cusc-gold text-slate-900 px-4 py-3 rounded-full text-sm font-bold tracking-wider hover:bg-yellow-400 transition-all shadow-md"
+              className="flex items-center justify-center gap-2 bg-cusc-gold text-cusc-blue px-4 py-3 rounded-full text-sm font-bold hover:bg-yellow-400 transition-all shadow-md"
             >
               <Phone size={16} />
               <span>0292 3731072</span>
