@@ -224,6 +224,7 @@ export default function CuscGatePage() {
         title="C-GATE - Hệ thống TTGQ TTHC | Cổng thông tin một cửa liên thông"
         description="Giải pháp một cửa liên thông giải quyết thủ tục hành chính. Tích hợp DVCQG, chữ ký số đa nền tảng, thanh toán trực tuyến. CUSC C-GATE."
         keywords="C-GATE, hệ thống một cửa, giải quyết thủ tục hành chính, TTHC, dịch vụ công quốc gia, DVCQG, chữ ký số, thanh toán trực tuyến, CUSC"
+        ogImage="https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=1200&auto=format&fit=crop"
       />
       <Navbar />
 

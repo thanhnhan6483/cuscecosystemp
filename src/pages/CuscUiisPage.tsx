@@ -237,6 +237,7 @@ export default function CuscUiisPage() {
         title="CUSC-UIIS - Hệ thống quản lý đào tạo Đại học | Đại học thông minh"
         description="Giải pháp quản lý đào tạo toàn diện: Tuyển sinh, thời khóa biểu, quản lý sinh viên, học phí, E-learning. Chuyển đổi số đại học thông minh với CUSC-UIIS."
         keywords="CUSC-UIIS, quản lý đào tạo, đại học thông minh, tuyển sinh trực tuyến, thời khóa biểu, quản lý sinh viên, học phí, E-learning, ERP giáo dục"
+        ogImage="https://www.cusc.vn/og-uiis.png"
       />
       <Navbar />
       

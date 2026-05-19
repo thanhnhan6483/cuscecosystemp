@@ -119,6 +119,7 @@ export default function CuscIsooPage() {
         title="CUSC-ISOO - Phần mềm ISO điện tử | Quản lý chất lượng ISO 9001:2015"
         description="Phần mềm ISO điện tử CUSC-ISOO: Số hóa quy trình ISO, quản lý hồ sơ thông minh, kiểm soát tài liệu, quy trình động. Giải pháp ISO 9001:2015 cho cơ quan, trường học."
         keywords="CUSC-ISOO, ISO điện tử, phần mềm ISO 9001:2015, quản lý chất lượng, kiểm soát tài liệu, quy trình động, ISO điện tử đại học, số hóa ISO"
+        ogImage="https://www.cusc.vn/og-isoo.jpg"
       />
       <Navbar />
       
