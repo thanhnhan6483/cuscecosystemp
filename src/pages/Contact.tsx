@@ -11,6 +11,7 @@ const teamMembers = [
     responsibility: "Phụ trách chung",
     phone: "0939 511 445",
     email: "nhannguyen@ctu.edu.vn",
+    zalo: "0939511445",
     image: new URL('../assets/images/profile_ntnhan.jpg', import.meta.url).href
   },
   {
@@ -19,6 +20,7 @@ const teamMembers = [
     responsibility: "Giáo dục thông minh",
     phone: "0837 912 349",
     email: "nttruclinh@ctu.edu.vn",
+    zalo: "0837912349",
     image: new URL('../assets/images/profile_nttlinh.jpg', import.meta.url).href
   },
   {
@@ -27,6 +29,7 @@ const teamMembers = [
     responsibility: "Giáo dục thông minh",
     phone: "0939 361 720",
     email: "lklinh@ctu.edu.vn",
+    zalo: "0939361720",
     image: new URL('../assets/images/profile_lklinh.jpg', import.meta.url).href
   },
   {
@@ -35,6 +38,7 @@ const teamMembers = [
     responsibility: "Chính quyền & Doanh nghiệp",
     phone: "0907 993 964",
     email: "ththuong@ctu.edu.vn",
+    zalo: "0907993964",
     image: new URL('../assets/images/profile_ttthuong.jpg', import.meta.url).href
   },
   {
@@ -43,6 +47,7 @@ const teamMembers = [
     responsibility: "Chính quyền & Doanh nghiệp",
     phone: "0366 183 317",
     email: "lvluan@ctu.edu.vn",
+    zalo: "0366183317",
     image: new URL('../assets/images/profile_lvluan.jpg', import.meta.url).href
   },
   {
@@ -51,13 +56,14 @@ const teamMembers = [
     responsibility: "Hỗ trợ chung",
     phone: "0917 502 148",
     email: "hhny@ctu.edu.vn",
+    zalo: "0917502148",
     image: new URL('../assets/images/profile_hhny.jpg', import.meta.url).href
   }
 ];
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-slate-50 font-sans">
+    <div className="min-h-screen bg-white font-sans">
       <SEO
         title="Liên hệ CUSC - Đội ngũ tư vấn chuyên gia"
         description="Liên hệ CUSC Software: 0292 3731072 | cusc.sales@ctu.edu.vn. Đội ngũ tư vấn chuyên nghiệp, hỗ trợ chuyển đổi số, giải pháp phần mềm giáo dục."
@@ -115,16 +121,34 @@ export default function Contact() {
                   <span className="text-sm font-black text-cusc-gold uppercase tracking-tight">{member.responsibility}</span>
                 </div>
 
-                {/* Contact Info - Compact Layout */}
-                <div className="w-full pt-6 border-t border-slate-100 grid grid-cols-1 gap-2">
-                  <div className="flex items-center justify-center gap-3 text-slate-600 group-hover:text-cusc-blue transition-colors">
-                    <Phone size={14} className="text-cusc-gold" />
-                    <span className="text-sm font-bold tracking-wide">{member.phone}</span>
-                  </div>
-                  <div className="flex items-center justify-center gap-3 text-slate-600 group-hover:text-cusc-blue transition-colors">
-                    <Mail size={14} className="text-cusc-gold" />
-                    <span className="text-sm font-bold tracking-wide">{member.email}</span>
-                  </div>
+                {/* Contact Info */}
+                <div className="w-full pt-6 border-t border-slate-100 flex justify-center gap-3">
+                  <a
+                    href={`tel:${member.phone.replace(/\s/g, '')}`}
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-full bg-cusc-blue/5 hover:bg-cusc-blue hover:text-white text-cusc-blue transition-all duration-200 text-xs font-bold"
+                    title={`Gọi ${member.phone}`}
+                  >
+                    <Phone size={13} />
+                    {member.phone}
+                  </a>
+                  <a
+                    href={`https://zalo.me/${member.zalo}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-full bg-[#0068ff]/10 hover:bg-[#0068ff] hover:text-white text-[#0068ff] transition-all duration-200 text-xs font-bold"
+                    title="Nhắn Zalo"
+                  >
+                    <span className="font-black">Z</span>
+                    Zalo
+                  </a>
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-full bg-cusc-gold/10 hover:bg-cusc-gold hover:text-white text-cusc-gold transition-all duration-200 text-xs font-bold"
+                    title={member.email}
+                  >
+                    <Mail size={13} />
+                    Email
+                  </a>
                 </div>
               </motion.div>
             ))}
