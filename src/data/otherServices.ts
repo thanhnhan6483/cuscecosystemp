@@ -1,7 +1,44 @@
-import { Settings, FileCheck, LayoutDashboard, BookOpen, GraduationCap, ShieldCheck, Zap, Cloud, Code2, Layers, Smartphone, Network, Cpu, Globe, Search, Palette, BarChart3, Share2, Wifi, Thermometer, Bell, Activity, Droplets, FlaskConical } from 'lucide-react';
+import { Settings, FileCheck, LayoutDashboard, BookOpen, GraduationCap, ShieldCheck, Zap, Cloud, Code2, Layers, Smartphone, Network, Cpu, Globe, Search, Palette, BarChart3, Share2, Wifi, Thermometer, Bell, Activity, Droplets, FlaskConical, FolderKanban, MapPin, TrendingUp, FileSearch, Clock, DollarSign } from 'lucide-react';
 import { AISolution } from './aiSolutions';
 
 export const OTHER_SERVICES: Record<string, AISolution> = {
+  'cusc-ipm': {
+    id: 'cusc-ipm',
+    name: 'CUSC-IPM',
+    subtitle: 'Quản lý dự án đầu tư chuyên nghiệp',
+    icon: FolderKanban,
+    type: 'service',
+    overview: 'CUSC-IPM là giải pháp quản lý toàn diện các dự án đầu tư xây dựng, quy hoạch, bồi thường và tái định cư. Hệ thống số hóa quy trình từ thẩm định, phê duyệt, cấp phép đến giám sát tiến độ và quản lý ngân sách — giúp cơ quan chủ quản kiểm soát chặt chẽ, minh bạch và hiệu quả mọi giai đoạn dự án.',
+    features: [
+      { icon: Clock, title: 'Quản lý tiến độ thời gian thực', desc: 'Theo dõi tiến độ từng giai đoạn, cảnh báo trễ hạn, đảm bảo dự án đúng kế hoạch.' },
+      { icon: FileCheck, title: 'Số hóa hồ sơ & thủ tục', desc: 'Quản lý hồ sơ thẩm định, phê duyệt, cấp phép điện tử — giảm giấy tờ, tăng tốc xử lý.' },
+      { icon: DollarSign, title: 'Quản lý kinh phí & ngân sách', desc: 'Theo dõi chi tiết nguồn vốn, giải ngân, quyết toán — minh bạch tài chính dự án.' },
+      { icon: MapPin, title: 'Bản đồ định vị dự án', desc: 'Hiển thị vị trí dự án trên bản đồ số, hỗ trợ quy hoạch và quản lý không gian.' },
+      { icon: FileSearch, title: 'AI tra cứu thông tin dự án', desc: 'Chatbot AI hỗ trợ tra cứu nhanh thông tin dự án, văn bản, quy định liên quan.' },
+      { icon: TrendingUp, title: 'Dự báo & cảnh báo tiến độ', desc: 'AI phân tích xu hướng, cảnh báo sớm rủi ro trễ tiến độ hoặc vượt ngân sách.' },
+    ],
+    technologies: [
+      'React / Next.js',
+      'PostgreSQL + PostGIS',
+      'Leaflet / Mapbox',
+      'AI Chatbot (RAG)',
+      'Time-series Analytics',
+      'Document Management System',
+      'Role-based Access Control',
+      'API Integration (eGov)',
+    ],
+    benefits: [
+      { value: '↑50%', label: 'Tăng tốc xử lý hồ sơ', color: 'blue' },
+      { value: '100%', label: 'Minh bạch tài chính', color: 'emerald' },
+      { value: '↓30%', label: 'Giảm trễ tiến độ', color: 'emerald' },
+      { value: '24/7', label: 'Tra cứu AI tức thời', color: 'blue' },
+    ],
+    differences: [
+      'Tích hợp AI Chatbot tra cứu thông tin dự án và văn bản pháp quy tức thời',
+      'Bản đồ số định vị dự án, hỗ trợ quy hoạch không gian trực quan',
+      'Dự báo tiến độ bằng AI — cảnh báo sớm rủi ro trước khi xảy ra',
+    ],
+  },
   'cusc-iot': {
     id: 'cusc-iot',
     name: 'CUSC-IoT',
