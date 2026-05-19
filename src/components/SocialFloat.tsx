@@ -32,7 +32,7 @@ const SOCIALS = [
 ];
 
 export const SocialFloat = () => (
-  <div className="fixed right-4 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-2">
+  <div className="fixed right-4 bottom-8 z-50 flex flex-col gap-2">
     {SOCIALS.map(({ label, href, bg, icon }) => (
       <a
         key={label}
