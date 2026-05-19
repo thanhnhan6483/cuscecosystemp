@@ -1,7 +1,62 @@
-import { Settings, FileCheck, LayoutDashboard, BookOpen, GraduationCap, ShieldCheck, Zap, Cloud, Code2, Layers, Smartphone, Network, Cpu, Globe, Search, Palette, BarChart3, Share2 } from 'lucide-react';
+import { Settings, FileCheck, LayoutDashboard, BookOpen, GraduationCap, ShieldCheck, Zap, Cloud, Code2, Layers, Smartphone, Network, Cpu, Globe, Search, Palette, BarChart3, Share2, Wifi, Thermometer, Bell, Activity, Droplets, FlaskConical } from 'lucide-react';
 import { AISolution } from './aiSolutions';
 
 export const OTHER_SERVICES: Record<string, AISolution> = {
+  'cusc-iot': {
+    id: 'cusc-iot',
+    name: 'CUSC-IoT',
+    subtitle: 'Giải pháp IoT nông nghiệp & thủy sản thông minh',
+    icon: Wifi,
+    type: 'service',
+    overview: 'CUSC-IoT là hệ thống cảm biến và giám sát thông minh ứng dụng công nghệ IoT, được triển khai tại ao nuôi thủy hải sản, vùng trồng nông nghiệp và cây ăn trái. Dữ liệu thu thập tự động 24/7, cảnh báo tức thời qua điện thoại — giúp nông dân và doanh nghiệp ra quyết định chính xác, giảm rủi ro và tăng năng suất.',
+    features: [
+      { icon: Thermometer, title: 'Cảm biến đa thông số', desc: 'Đo nhiệt độ, độ ẩm, độ mặn, độ pH, oxy hòa tan, độ đục liên tục và chính xác.' },
+      { icon: Activity, title: 'Dữ liệu thời gian thực', desc: 'Thu thập và truyền dữ liệu tự động, hiển thị trực tiếp trên dashboard web và app di động.' },
+      { icon: Bell, title: 'Cảnh báo tức thời', desc: 'Gửi thông báo ngay qua Zalo/SMS khi thông số vượt ngưỡng an toàn — phản ứng kịp thời trước sự cố.' },
+      { icon: Smartphone, title: 'Quản lý trên di động', desc: 'Ứng dụng mobile theo dõi nhiều ao/vùng trồng cùng lúc, mọi lúc mọi nơi.' },
+      { icon: Zap, title: 'Thiết bị bền — tiết kiệm điện', desc: 'Cảm biến chống nước, chịu môi trường khắc nghiệt, hỗ trợ pin mặt trời, tuổi thọ cao.' },
+      { icon: BarChart3, title: 'Phân tích & dự báo', desc: 'Lịch sử dữ liệu, biểu đồ xu hướng, hỗ trợ dự báo dịch bệnh và tối ưu lịch cho ăn/tưới.' },
+    ],
+    technologies: [
+      'LoRaWAN / 4G / WiFi',
+      'MQTT Protocol',
+      'Node-RED',
+      'InfluxDB / TimeSeries DB',
+      'Grafana Dashboard',
+      'React Native (Mobile)',
+      'Zalo OA / SMS Alert',
+      'Solar Power Support',
+    ],
+    benefits: [
+      { value: '24/7', label: 'Giám sát không ngừng nghỉ', color: 'blue' },
+      { value: '↓40%', label: 'Giảm thiệt hại do sự cố', color: 'emerald' },
+      { value: '↑30%', label: 'Tăng năng suất nuôi trồng', color: 'emerald' },
+      { value: '0s', label: 'Thời gian cảnh báo', color: 'blue' },
+    ],
+    example: {
+      inputLabel: 'Tình huống thực tế',
+      input: 'Lúc 2 giờ sáng, oxy hòa tan trong ao tôm giảm xuống dưới ngưỡng an toàn.',
+      outputLabel: 'CUSC-IoT sẽ',
+      output: [
+        'Phát hiện bất thường ngay lập tức',
+        'Gửi cảnh báo Zalo/SMS đến chủ ao',
+        'Ghi nhận sự kiện vào lịch sử dữ liệu',
+        'Đề xuất bật quạt sục khí tự động',
+      ],
+      note: 'Xử lý kịp thời — tránh thiệt hại hàng chục triệu đồng.',
+    },
+    differences: [
+      'Thiết bị được hiệu chuẩn chuẩn xác, số liệu đáng tin cậy cho quyết định sản xuất',
+      'Hỗ trợ đa giao thức (LoRaWAN, 4G, WiFi) — phủ sóng cả vùng sâu, vùng xa',
+      'Tích hợp AI phân tích xu hướng, cảnh báo sớm dịch bệnh trước khi bùng phát',
+    ],
+    clients: [
+      'Hợp tác xã nuôi tôm Cà Mau',
+      'Vùng trồng xoài Đồng Tháp',
+      'Trang trại cá tra An Giang',
+      'Vườn sầu riêng Tiền Giang',
+    ],
+  },
   'cusc-portal': {
     id: 'cusc-portal',
     name: 'CUSC-Portal',
