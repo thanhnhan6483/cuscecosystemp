@@ -1,7 +1,56 @@
-import { Settings, FileCheck, LayoutDashboard, BookOpen, GraduationCap, ShieldCheck, Zap, Cloud, Code2, Layers, Smartphone, Network, Cpu } from 'lucide-react';
+import { Settings, FileCheck, LayoutDashboard, BookOpen, GraduationCap, ShieldCheck, Zap, Cloud, Code2, Layers, Smartphone, Network, Cpu, Globe, Search, Palette, BarChart3, Share2 } from 'lucide-react';
 import { AISolution } from './aiSolutions';
 
 export const OTHER_SERVICES: Record<string, AISolution> = {
+  'cusc-portal': {
+    id: 'cusc-portal',
+    name: 'CUSC-Portal',
+    subtitle: 'Cổng thông tin điện tử chuyên nghiệp',
+    icon: Globe,
+    type: 'service',
+    overview: 'CUSC-Portal là nền tảng cổng thông tin điện tử hiện đại, được thiết kế riêng cho cơ quan nhà nước, trường học và đơn vị sự nghiệp. Giao diện chuẩn Chính phủ số, tối ưu SEO, bảo mật đa lớp — giúp tổ chức xây dựng "mặt tiền số" chuyên nghiệp, minh bạch và phục vụ người dân, học sinh, đối tác hiệu quả.',
+    features: [
+      { icon: Palette, title: 'Giao diện hiện đại', desc: 'Responsive mọi thiết bị, chuẩn WCAG 2.2 AA, tùy biến theo nhận diện thương hiệu đơn vị.' },
+      { icon: Search, title: 'Tối ưu SEO', desc: 'Cấu trúc URL chuẩn, meta tags tự động, sitemap XML — tăng khả năng hiển thị trên Google.' },
+      { icon: ShieldCheck, title: 'Bảo mật đa lớp', desc: 'HTTPS, phân quyền vai trò, chống XSS/SQL Injection, tuân thủ Luật An ninh mạng 2018.' },
+      { icon: LayoutDashboard, title: 'Quản lý nội dung', desc: 'CMS trực quan, đăng tin tức, văn bản, thông báo không cần kỹ thuật.' },
+      { icon: Share2, title: 'Kết nối mạng xã hội & TMĐT', desc: 'Tích hợp Facebook, Zalo, YouTube, sàn thương mại điện tử và cổng thanh toán trực tuyến.' },
+      { icon: BarChart3, title: 'Thống kê & Báo cáo', desc: 'Dashboard theo dõi lượt truy cập, hành vi người dùng, hiệu quả nội dung theo thời gian thực.' },
+    ],
+    technologies: [
+      'Next.js / React',
+      'TailwindCSS',
+      'PostgreSQL',
+      'Redis Cache',
+      'Nginx + Let\'s Encrypt SSL',
+      'Google Analytics 4',
+      'OpenID Connect (SSO)',
+      'Zalo / Facebook API',
+    ],
+    benefits: [
+      { value: '100%', label: 'Responsive mọi thiết bị', color: 'blue' },
+      { value: 'Top 3', label: 'Kết quả tìm kiếm Google', color: 'emerald' },
+      { value: '99.9%', label: 'Uptime đảm bảo', color: 'emerald' },
+      { value: '0 code', label: 'Quản trị nội dung', color: 'blue' },
+    ],
+    example: {
+      inputLabel: 'Khách hàng yêu cầu',
+      input: 'Chúng tôi cần cổng thông tin cho Sở Giáo dục, tích hợp lịch công tác, văn bản và Zalo OA.',
+      outputLabel: 'CUSC-Portal sẽ',
+      output: [
+        'Triển khai giao diện theo bộ nhận diện của Sở',
+        'Tích hợp module Lịch công tác, Văn bản pháp quy',
+        'Kết nối Zalo OA và fanpage Facebook chính thức',
+        'Bàn giao trong 30 ngày, đào tạo quản trị viên',
+      ],
+      note: 'Không cần đội IT riêng để vận hành hàng ngày.',
+    },
+    differences: [
+      'Tuân thủ Khung kiến trúc Chính phủ số, sẵn sàng kết nối liên thông',
+      'Giao diện chuẩn WCAG 2.2 AA — tiếp cận được mọi đối tượng, kể cả người khuyết tật',
+      'Hỗ trợ đa ngôn ngữ, đa đơn vị trên cùng nền tảng (multi-tenant)',
+    ],
+  },
   'cho-thuê-phần-mềm': {
     id: 'cho-thuê-phần-mềm',
     name: 'Cho thuê phần mềm',
