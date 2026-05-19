@@ -20,12 +20,13 @@ export const OTHER_SERVICES: Record<string, AISolution> = {
       { icon: GitBranch, title: '8. Quản lý chỉ đạo tuyến', desc: 'Hỗ trợ chuyển tuyến, kết nối Cổng dữ liệu y tế quốc gia và báo cáo Bộ Y tế.' },
     ],
     technologies: [
-      'Kiến trúc module mở',
+      'C# / .NET Framework',
+      'Microsoft SQL Server',
+      'ASP.NET Web Forms / MVC',
+      'Crystal Reports',
       'Mã ICD-10 chuẩn quốc tế',
       'Cổng dữ liệu y tế quốc gia',
       'Hệ thống giám định BHYT',
-      'Phân quyền & lưu vết thao tác',
-      'Backup & bảo mật dữ liệu',
     ],
     benefits: [
       { value: '8', label: 'Phân hệ theo QĐ BYT', color: 'blue' },
