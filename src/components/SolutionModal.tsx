@@ -82,7 +82,7 @@ export const SolutionModal: React.FC<SolutionModalProps> = ({ isOpen, onClose, s
                   <section>
                     <h3 className={`text-base font-black ${theme.heading} uppercase mb-3 flex items-center gap-2 tracking-wide`}>
                       <Sparkles size={18} className={theme.iconColor} />
-                      Giới thiệu dịch vụ
+                      Giới thiệu giải pháp
                     </h3>
                     <div className={`${theme.card} p-5 rounded-2xl border`}>
                       <p className="text-slate-700 leading-relaxed text-[15px]">
