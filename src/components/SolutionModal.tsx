@@ -144,22 +144,6 @@ export const SolutionModal: React.FC<SolutionModalProps> = ({ isOpen, onClose, s
                     </section>
                   )}
 
-                  {/* Clients */}
-                  {solution.clients && solution.clients.length > 0 && (
-                    <section>
-                      <h3 className={`text-base font-black ${theme.heading} uppercase mb-3 flex items-center gap-2 tracking-wide`}>
-                        <Users size={18} className={theme.iconColor} />
-                        Khách hàng tiêu biểu
-                      </h3>
-                      <div className="flex flex-wrap gap-2">
-                        {solution.clients.map((client, idx) => (
-                          <span key={idx} className="px-3 py-1.5 bg-blue-50 border border-blue-200 rounded-full text-sm font-semibold text-blue-800">
-                            {client}
-                          </span>
-                        ))}
-                      </div>
-                    </section>
-                  )}
                 </div>
 
                 {/* Right Column */}
@@ -244,6 +228,23 @@ export const SolutionModal: React.FC<SolutionModalProps> = ({ isOpen, onClose, s
                           {solution.technologies.map((tech, idx) => (
                             <span key={idx} className="px-3 py-1 bg-white/10 rounded-full text-xs font-semibold text-slate-200 border border-white/15">
                               {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </section>
+                    )}
+
+                    {/* Clients */}
+                    {solution.clients && solution.clients.length > 0 && (
+                      <section className="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+                        <h3 className={`text-sm font-black ${theme.heading} uppercase mb-3 flex items-center gap-2 tracking-wide`}>
+                          <Users size={16} className={theme.iconColor} />
+                          Khách hàng tiêu biểu
+                        </h3>
+                        <div className="flex flex-wrap gap-2">
+                          {solution.clients.map((client, idx) => (
+                            <span key={idx} className="px-3 py-1.5 bg-white border border-blue-200 rounded-full text-xs font-semibold text-blue-800">
+                              {client}
                             </span>
                           ))}
                         </div>
