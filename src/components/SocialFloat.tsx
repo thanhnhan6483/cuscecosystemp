@@ -13,12 +13,7 @@ const SOCIALS = [
     label: 'Zalo OA',
     href: 'https://oa.zalo.me/cuscsoftware',
     bg: 'bg-[#0068ff]',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="white" className="w-6 h-6">
-        {/* Z shape */}
-        <path d="M3 5h12L3 17h13M16 5v14" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-      </svg>
-    ),
+    icon: <span className="text-white text-xs font-black tracking-tight">Zalo</span>,
   },
   {
     label: 'Facebook',
