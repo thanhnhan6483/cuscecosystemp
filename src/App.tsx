@@ -321,7 +321,7 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
               }
 
               return (
-                <div key={item.name} className="h-full">
+                <div key={item.name} className="h-full" onClick={() => onSolutionClick(item.name)}>
                   {CardContent}
                 </div>
               );
