@@ -66,7 +66,7 @@ export default function Contact() {
     <div className="min-h-screen bg-white font-sans">
       <SEO
         title="Liên hệ CUSC - Đội ngũ tư vấn chuyên gia"
-        description="Liên hệ CUSC Software: 0292 3731072 | cusc.sales@ctu.edu.vn. Đội ngũ tư vấn chuyên nghiệp, hỗ trợ chuyển đổi số, giải pháp phần mềm giáo dục."
+        description="Liên hệ CUSC Software: 0292 3731072 | sales@cusc.ctu.edu.vn. Đội ngũ tư vấn chuyên nghiệp, hỗ trợ chuyển đổi số, giải pháp phần mềm giáo dục."
         keywords="liên hệ CUSC, số điện thoại CUSC, email CUSC, tư vấn phần mềm, hỗ trợ khách hàng, chuyển đổi số"
       />
       <Navbar />
@@ -138,7 +138,7 @@ export default function Contact() {
                     className="flex items-center gap-1.5 px-3 py-2 rounded-full bg-[#0068ff]/10 hover:bg-[#0068ff] hover:text-white text-[#0068ff] transition-all duration-200 text-xs font-bold"
                     title="Nhắn Zalo"
                   >
-                    <span className="font-black">Z</span>
+                    
                     Zalo
                   </a>
                   <a

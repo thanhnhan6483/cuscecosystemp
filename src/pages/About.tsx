@@ -267,7 +267,7 @@ const About = () => {
                     <Phone className="w-4 h-4 md:w-5 md:h-5" />
                     Liên hệ ngay
                   </a>
-                  <a href="mailto:cusc.sales@ctu.edu.vn" className="w-full sm:w-auto bg-white/10 text-white border border-white/20 px-6 py-3 md:px-10 md:py-4 rounded-full text-sm md:text-base font-bold uppercase tracking-wider md:tracking-widest hover:bg-white/20 transition-all backdrop-blur-sm flex items-center justify-center gap-2">
+                  <a href="mailto:sales@cusc.ctu.edu.vn" className="w-full sm:w-auto bg-white/10 text-white border border-white/20 px-6 py-3 md:px-10 md:py-4 rounded-full text-sm md:text-base font-bold uppercase tracking-wider md:tracking-widest hover:bg-white/20 transition-all backdrop-blur-sm flex items-center justify-center gap-2">
                     <Mail className="w-4 h-4 md:w-5 md:h-5" />
                     Gửi yêu cầu
                   </a>

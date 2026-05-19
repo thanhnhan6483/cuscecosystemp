@@ -114,7 +114,7 @@ export default function CuscIsooPage() {
   ];
 
   return (
-    <div className="min-h-screen font-sans selection:bg-cusc-blue selection:text-white bg-slate-50">
+    <div className="min-h-screen font-sans selection:bg-cusc-blue selection:text-white bg-white">
       <SEO
         title="CUSC-ISOO - Phần mềm ISO điện tử | Quản lý chất lượng ISO 9001:2015"
         description="Phần mềm ISO điện tử CUSC-ISOO: Số hóa quy trình ISO, quản lý hồ sơ thông minh, kiểm soát tài liệu, quy trình động. Giải pháp ISO 9001:2015 cho cơ quan, trường học."

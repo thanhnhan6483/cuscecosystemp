@@ -219,7 +219,7 @@ export default function CuscGatePage() {
   ];
 
   return (
-    <div className="min-h-screen font-sans selection:bg-cusc-blue selection:text-white bg-slate-50">
+    <div className="min-h-screen font-sans selection:bg-cusc-blue selection:text-white bg-white">
       <SEO
         title="C-GATE - Hệ thống TTGQ TTHC | Cổng thông tin một cửa liên thông"
         description="Giải pháp một cửa liên thông giải quyết thủ tục hành chính. Tích hợp DVCQG, chữ ký số đa nền tảng, thanh toán trực tuyến. CUSC C-GATE."

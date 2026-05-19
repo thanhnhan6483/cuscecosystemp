@@ -41,7 +41,7 @@ export const SEO = ({
       "@type": "ContactPoint",
       "telephone": "+84-292-3731072",
       "contactType": "customer service",
-      "email": "cusc.sales@ctu.edu.vn",
+      "email": "sales@cusc.ctu.edu.vn",
       "availableLanguage": "Vietnamese"
     },
     "sameAs": [

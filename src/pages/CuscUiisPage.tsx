@@ -232,7 +232,7 @@ export default function CuscUiisPage() {
   ];
 
   return (
-    <div className="min-h-screen font-sans selection:bg-cusc-blue selection:text-white bg-slate-50">
+    <div className="min-h-screen font-sans selection:bg-cusc-blue selection:text-white bg-white">
       <SEO
         title="CUSC-UIIS - Hệ thống quản lý đào tạo Đại học | Đại học thông minh"
         description="Giải pháp quản lý đào tạo toàn diện: Tuyển sinh, thời khóa biểu, quản lý sinh viên, học phí, E-learning. Chuyển đổi số đại học thông minh với CUSC-UIIS."

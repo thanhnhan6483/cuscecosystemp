@@ -84,7 +84,7 @@ const SmartUniversityGrid = () => {
           <div className="w-12 h-12 bg-white/50 rounded-xl flex items-center justify-center mb-3 shadow-sm group-hover:bg-white/60 transition-colors">
             <Users size={24} className="text-blue-700" />
           </div>
-          <span className="text-[11px] font-bold text-blue-800/60 mb-1 tracking-widest">TRỤ CỘT 1</span>
+          <span className="text-[11px] font-bold text-blue-800/90 mb-1 tracking-widest">TRỤ CỘT 1</span>
           <p className="text-slate-900 font-black text-base leading-tight uppercase tracking-tight">
             CÔNG TÁC TUYỂN SINH,<br/>
             QUẢN LÝ SINH VIÊN
@@ -96,7 +96,7 @@ const SmartUniversityGrid = () => {
           <div className="w-12 h-12 bg-white/50 rounded-xl flex items-center justify-center mb-3 shadow-sm group-hover:bg-white/60 transition-colors">
             <GraduationCap size={24} className="text-orange-700" />
           </div>
-          <span className="text-[11px] font-bold text-orange-800/60 mb-1 tracking-widest">TRỤ CỘT 2</span>
+          <span className="text-[11px] font-bold text-orange-800/90 mb-1 tracking-widest">TRỤ CỘT 2</span>
           <p className="text-orange-900 font-black text-base leading-tight uppercase tracking-tight">
             CÔNG TÁC ĐÀO TẠO,<br/>
             NGHIÊN CỨU KHOA HỌC
@@ -108,7 +108,7 @@ const SmartUniversityGrid = () => {
           <div className="w-12 h-12 bg-white/50 rounded-xl flex items-center justify-center mb-3 shadow-sm group-hover:bg-white/60 transition-colors">
             <CircleDollarSign size={24} className="text-amber-700" />
           </div>
-          <span className="text-[11px] font-bold text-amber-800/60 mb-1 tracking-widest">TRỤ CỘT 3</span>
+          <span className="text-[11px] font-bold text-amber-800/90 mb-1 tracking-widest">TRỤ CỘT 3</span>
           <p className="text-amber-900 font-black text-base leading-tight uppercase tracking-tight">
             CÔNG TÁC<br/>
             TÀI CHÍNH
@@ -120,7 +120,7 @@ const SmartUniversityGrid = () => {
           <div className="w-12 h-12 bg-white/50 rounded-xl flex items-center justify-center mb-3 shadow-sm group-hover:bg-white/60 transition-colors">
             <Building2 size={24} className="text-emerald-700" />
           </div>
-          <span className="text-[11px] font-bold text-emerald-800/60 mb-1 tracking-widest">TRỤ CỘT 4</span>
+          <span className="text-[11px] font-bold text-emerald-800/90 mb-1 tracking-widest">TRỤ CỘT 4</span>
           <p className="text-emerald-900 font-black text-base leading-tight uppercase tracking-tight">
             CÔNG TÁC ĐIỀU HÀNH VÀ<br/>
             HOẠT ĐỘNG CHUYÊN MÔN
@@ -128,7 +128,7 @@ const SmartUniversityGrid = () => {
         </div>
 
         {/* Center Core - CUSC-UIIS (Focal Point) */}
-        <Link to="/cusc-uiis" target="_blank" rel="noopener noreferrer" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gradient-to-br from-white to-blue-50 shadow-[0_20px_60px_rgba(27,75,163,0.4)] border-4 border-cusc-blue flex flex-col items-center justify-center z-10 rounded-full ring-4 ring-cusc-gold/30 backdrop-blur-sm transition-all hover:scale-110 group/core cursor-pointer">
+        <Link to="/cusc-uiis" target="_blank" rel="noopener noreferrer" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gradient-to-br from-white to-blue-50 shadow-[0_12px_40px_rgba(27,75,163,0.25)] border-4 border-cusc-blue flex flex-col items-center justify-center z-10 rounded-full ring-4 ring-cusc-gold/30 backdrop-blur-sm transition-all hover:scale-110 group/core cursor-pointer">
           <div className="absolute inset-0 rounded-full bg-cusc-blue/5 animate-pulse" />
           <div className="w-14 h-14 bg-gradient-to-br from-cusc-blue to-blue-600 rounded-full flex items-center justify-center text-white mb-2 group-hover/core:scale-110 group-hover/core:rotate-6 transition-all shadow-lg">
             <GraduationCap size={28} strokeWidth={2.5} />
@@ -149,23 +149,23 @@ const SmartUniversityGrid = () => {
 const slides = [
   {
     image: sliderUIIS,
-    title: "Hệ thống Tích hợp thông tin Quản lý đào tạo",
+    title: "Hệ thống Tích hợp thông tin Quản lý đào tạo (CUSC-UIIS)",
     subtitle: "Giải pháp chuyển đổi số toàn diện dành cho Trường Đại học, Cao đẳng, kiến tạo hệ sinh thái giáo dục thông minh"
   },
   {
     image: sliderIES,
-    title: "Nền tảng Quản lý Sáng kiến Thông minh",
-    subtitle: "Tối ưu quy trình từ đăng ký, chấm điểm đến công nhận và mở rộng phạm vi ảnh hưởng"
+    title: "Phần mềm Quản lý Sáng kiến Thông minh",
+    subtitle: "Tối ưu quy trình từ đăng ký, chấm điểm đến công nhận và mở rộng phạm vi ảnh hưởng sáng kiến"
   },
   {
     image: sliderSTM,
-    title: "Hệ thống Quản lý Đề tài Nghiên cứu Khoa học",
+    title: "Phần mềm Quản lý đề tài nghiệm vụ KH&CN",
     subtitle: "Giải pháp toàn diện theo dõi, đánh giá và tổng kết vòng đời đề tài NCKH từ đăng ký đến nghiệm thu"
   },
   {
     image: "https://newgensoft.com/wp-content/uploads/2025/03/Workflow-Management-scaled.jpg",
-    title: "Tự động hóa quy trình quản lý",
-    subtitle: "Tự động hóa luồng công việc, giảm thao tác thủ công và tăng tốc độ xử lý nghiệp vụ"
+    title: "Tự động hóa quy trình bằng AI Agent",
+    subtitle: "Tự động hóa luồng công việc theo quy trình, giảm thao tác thủ công và tăng tốc độ xử lý nghiệp vụ"
   },
   {
     image: "https://www.cumanagement.com/sites/default/files/2021-08/hand-chatbot-technology-background.jpg",
@@ -185,7 +185,7 @@ const HeroSlider = () => {
   }, []);
 
   return (
-    <div id="intro" className="relative w-full h-[250px] md:h-[400px] lg:h-[670px] overflow-hidden bg-slate-900">
+    <div id="intro" className="relative w-full h-[250px] md:h-[400px] lg:h-[670px] overflow-hidden bg-slate-700">
       {slides.map((slide, idx) => (
         <motion.div
           key={idx}
@@ -194,29 +194,27 @@ const HeroSlider = () => {
           animate={{ opacity: idx === current ? 1 : 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="absolute inset-0 bg-black/40 z-10" />
           <img 
             src={slide.image} 
             alt={slide.title} 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
-            <motion.h1
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: idx === current ? 0 : 20, opacity: idx === current ? 1 : 0 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-3xl md:text-3xl lg:text-5xl font-black text-white mb-2 md:mb-4 tracking-tight drop-shadow-lg"
-            >
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+          {/* Text overlay */}
+          <div className="absolute inset-0 flex flex-col justify-end pb-16 px-6 md:px-16 lg:px-24 z-10">
+            <h2 className="text-white font-black text-xl md:text-3xl lg:text-4xl leading-tight max-w-3xl drop-shadow-lg mb-2">
               {slide.title}
-            </motion.h1>
-            <motion.p
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: idx === current ? 0 : 20, opacity: idx === current ? 1 : 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-base md:text-sm lg:text-lg text-slate-200 max-w-2xl font-medium drop-shadow-md px-2"
-            >
+            </h2>
+            <p className="text-white/90 text-sm md:text-base lg:text-lg max-w-2xl mb-5 drop-shadow">
               {slide.subtitle}
-            </motion.p>
+            </p>
+            <a
+              href="#ecosystem"
+              className="self-start flex items-center gap-2 bg-cusc-gold text-cusc-blue px-5 py-2.5 rounded-full text-sm font-bold hover:bg-yellow-400 transition-all shadow-lg"
+            >
+              Khám phá giải pháp <ChevronRight size={16} />
+            </a>
           </div>
         </motion.div>
       ))}
@@ -253,7 +251,7 @@ const HeroSlider = () => {
 };
 
 const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => void }) => (
-  <section id="ecosystem" className="py-12 bg-slate-100 min-h-screen">
+  <section id="ecosystem" className="py-12 bg-white min-h-screen">
     <div className="max-w-[1600px] mx-auto px-4 relative">
 
       <div className="text-center mb-12 relative z-10">
@@ -268,26 +266,23 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 mb-4 relative z-10">
         
         {/* Cluster 1: CHÍNH QUYỀN VÀ DOANH NGHIỆP (CUSC Blue) */}
-        <div className="lg:col-span-4 bg-gradient-to-br from-cusc-blue to-blue-500 rounded-2xl p-6 text-white shadow-2xl flex flex-col relative overflow-hidden group">
+        <div className="lg:col-span-4 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl p-6 text-white shadow-lg flex flex-col relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
-          <h3 className="text-lg font-black uppercase tracking-wider mb-5 flex items-center gap-3 border-b border-white/20 pb-4">
-            <Building2 size={24} className="text-cusc-gold" />
+          <h3 className="text-lg font-black uppercase tracking-wider mb-5 flex items-center gap-3 border-b border-white/20 pb-4 min-h-[60px]">
+            <Building2 size={24} className="text-cusc-gold shrink-0" />
             {ECOSYSTEM_DATA.government.title}
           </h3>
           <div className="grid grid-cols-2 gap-3">
             {ECOSYSTEM_DATA.government.items.map((item) => {
               const CardContent = (
-                <div className="group/card relative bg-white/5 backdrop-blur-md rounded-xl p-3.5 hover:bg-white/10 transition-all duration-300 cursor-pointer border border-white/10 hover:border-cusc-gold/50 hover:shadow-[0_8px_30px_rgba(255,193,7,0.15)] hover:-translate-y-1 overflow-hidden h-full">
-                  {/* Decorative gradient blob on hover */}
-                  <div className="absolute -inset-2 bg-gradient-to-br from-cusc-gold/20 to-transparent opacity-0 group-hover/card:opacity-100 blur-xl transition-opacity duration-500" />
-
+                <div className="group/card relative bg-white rounded-xl p-3.5 hover:bg-blue-50 transition-all duration-300 cursor-pointer border border-white/60 hover:border-cusc-gold/60 hover:shadow-md hover:-translate-y-1 overflow-hidden h-full">
                   <div className="relative z-10 flex items-center gap-3 h-full">
-                    <div className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center group-hover/card:scale-110 group-hover/card:bg-cusc-gold/20 transition-all duration-300 shadow-inner shrink-0">
-                      <item.icon size={18} className="text-cusc-gold" />
+                    <div className="w-9 h-9 bg-cusc-blue/10 rounded-lg flex items-center justify-center group-hover/card:scale-110 group-hover/card:bg-cusc-gold/20 transition-all duration-300 shrink-0">
+                      <item.icon size={18} className="text-cusc-blue group-hover/card:text-cusc-gold transition-colors" />
                     </div>
                     <div className="flex flex-col">
-                      <h4 className="text-base font-black text-white group-hover/card:text-cusc-gold transition-colors leading-tight">{item.name}</h4>
-                      <p className="text-sm text-white/60 leading-tight group-hover/card:text-white/80 transition-colors">{item.desc}</p>
+                      <h4 className="text-sm font-black text-cusc-blue leading-tight">{item.name}</h4>
+                      <p className="text-xs text-slate-600 leading-tight">{item.desc}</p>
                     </div>
                   </div>
                 </div>
@@ -337,10 +332,10 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
         </div>
 
         {/* Cluster 2: Giải pháp đại học thông minh (CUSC Gold) */}
-        <div className="lg:col-span-5 bg-gradient-to-br from-amber-400 to-cusc-gold rounded-2xl p-8 shadow-2xl relative overflow-hidden group flex flex-col">
+        <div className="lg:col-span-5 bg-gradient-to-br from-amber-400 to-cusc-gold rounded-2xl p-6 shadow-lg relative overflow-hidden group flex flex-col">
           <div className="absolute top-0 right-0 w-32 h-32 bg-black/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
-          <h3 className="text-lg font-black uppercase tracking-wider mb-6 flex items-center gap-3 border-b border-black/10 pb-4 text-cusc-blue">
-            <GraduationCap size={24} className="text-cusc-blue" />
+          <h3 className="text-lg font-black uppercase tracking-wider mb-5 flex items-center gap-3 border-b border-white/30 pb-4 text-white min-h-[60px]">
+            <GraduationCap size={24} className="text-white shrink-0" />
             {ECOSYSTEM_DATA.smartUniversity.title}
           </h3>
 
@@ -353,10 +348,10 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
         </div>
 
         {/* Cluster 3: Ứng dụng AI (CUSC Blue) */}
-        <div className="lg:col-span-3 bg-gradient-to-br from-cusc-blue to-indigo-600 rounded-2xl p-6 text-white shadow-2xl relative overflow-hidden group">
+        <div className="lg:col-span-3 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl p-6 text-white shadow-lg relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
-          <h3 className="text-lg font-black uppercase tracking-wider mb-8 flex items-center gap-3 border-b border-white/20 pb-4">
-            <Bot size={24} className="text-cusc-gold" />
+          <h3 className="text-lg font-black uppercase tracking-wider mb-5 flex items-center gap-3 border-b border-white/20 pb-4 min-h-[60px]">
+            <Bot size={24} className="text-cusc-gold shrink-0" />
             {ECOSYSTEM_DATA.aiApplications.title}
           </h3>
           <div className="flex flex-col gap-3">
@@ -364,14 +359,14 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
               <div 
                 key={item.name} 
                 onClick={() => onSolutionClick(item.name)}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4 hover:translate-x-2 transition-transform cursor-pointer border border-white/10"
+                className="bg-white rounded-xl p-4 flex items-center gap-4 hover:bg-blue-50 transition-all duration-300 cursor-pointer border border-white/60 hover:border-cusc-gold/60 hover:shadow-md hover:-translate-y-1"
               >
-                <div className="w-10 h-10 bg-cusc-gold/20 rounded-lg flex items-center justify-center text-cusc-gold shrink-0">
-                  <item.icon size={20} />
+                <div className="w-10 h-10 bg-cusc-blue/10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-cusc-gold/20 transition-colors">
+                  <item.icon size={20} className="text-cusc-blue" />
                 </div>
                 <div>
-                  <h4 className="text-base font-black text-white">{item.name}</h4>
-                  <p className="text-sm text-white/70">{item.desc}</p>
+                  <h4 className="text-sm font-black text-cusc-blue leading-tight">{item.name}</h4>
+                  <p className="text-xs text-slate-600">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -384,22 +379,21 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
           <div className="absolute top-0 left-[27.7%] w-4 h-1 bg-white/30 rounded-b-full z-20" />
           <div className="absolute top-0 left-[72.2%] w-4 h-1 bg-white/30 rounded-b-full z-20" />
           
-          <div className="bg-gradient-to-r from-cusc-gold via-amber-500 to-cusc-gold rounded-2xl p-4 shadow-2xl relative overflow-hidden border border-white/30">
+          <div className="bg-gradient-to-r from-cusc-gold via-amber-500 to-cusc-gold rounded-2xl p-4 shadow-lg relative overflow-hidden border border-white/30">
             
             <div className="relative z-30 flex items-center justify-around gap-4 px-8">
               {ECOSYSTEM_DATA.dataBackbone.services.map((service, idx) => (
                 <div key={service} className="flex items-center gap-3 group/service">
-                  <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center group-hover/service:scale-110 group-hover/service:bg-white/30 transition-all shadow-lg relative">
-                    {/* Pulsing Ring */}
+                  <div className="w-12 h-12 rounded-full bg-white/40 border border-white/50 flex items-center justify-center group-hover/service:scale-110 group-hover/service:bg-white/60 transition-all shadow relative">
                     <div className="absolute inset-0 rounded-full border border-white/40 animate-ping opacity-20" />
                     
-                    {service === 'Tích hợp SSO' && <ShieldCheck size={22} className="text-white" />}
-                    {service === 'Kho dữ liệu dùng chung' && <Database size={22} className="text-white" />}
-                    {service === 'Cơ sở dữ liệu chuyên ngành' && <Layers size={22} className="text-white" />}
-                    {service === 'Cơ sở dữ liệu chia sẻ' && <Network size={22} className="text-white" />}
+                    {service === 'Tích hợp SSO' && <ShieldCheck size={22} className="text-cusc-blue" />}
+                    {service === 'Kho dữ liệu dùng chung' && <Database size={22} className="text-cusc-blue" />}
+                    {service === 'Cơ sở dữ liệu chuyên ngành' && <Layers size={22} className="text-cusc-blue" />}
+                    {service === 'Cơ sở dữ liệu chia sẻ' && <Network size={22} className="text-cusc-blue" />}
                   </div>
                   <div className="hidden sm:block">
-                    <span className="text-sm font-black text-white uppercase tracking-tighter block leading-none opacity-80 group-hover/service:opacity-100 transition-opacity">
+                    <span className="text-sm font-black text-white uppercase tracking-tighter block leading-none">
                       {service}
                     </span>
                   </div>
@@ -411,12 +405,10 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
           <div className="absolute top-1/2 right-0 -translate-y-1/2 w-1 h-4 bg-white/30 rounded-l-full z-20" />
         </div>
 
-        {/* Cluster 4: Chia sẻ dữ liệu (Darker Teal/Emerald) */}
-        <div className="lg:col-span-3 lg:row-span-2 bg-gradient-to-br from-teal-700 to-emerald-800 rounded-2xl p-5 text-white shadow-2xl relative overflow-hidden group border border-white/20">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
-          
-          <h3 className="text-sm font-black uppercase tracking-[0.2em] mb-4 flex items-center gap-2 text-white">
-            <Globe size={16} />
+        {/* Cluster 4: Chia sẻ dữ liệu */}
+        <div className="lg:col-span-3 lg:row-span-2 bg-slate-50 rounded-2xl p-5 shadow-lg relative overflow-hidden group border border-slate-200">
+          <h3 className="text-sm font-black uppercase tracking-[0.2em] mb-4 flex items-center gap-2 text-cusc-blue">
+            <Globe size={16} className="text-cusc-blue" />
             {ECOSYSTEM_DATA.dataSharing.title}
           </h3>
 
@@ -424,24 +416,14 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
             {ECOSYSTEM_DATA.dataSharing.items.map((item, idx) => (
               <div
                 key={item.name}
-                className={`
-                  relative p-3 rounded-xl border transition-all hover:scale-[1.02]
-                  ${idx === 0 ? 'bg-white/20 border-white/30' : ''}
-                  ${idx === 1 ? 'bg-white/15 border-white/25' : ''}
-                  ${idx === 2 ? 'bg-white/20 border-white/30' : ''}
-                `}
+                className="relative p-3 rounded-xl border border-slate-200 bg-white hover:border-cusc-blue/30 hover:shadow-sm transition-all hover:scale-[1.02]"
               >
                 <div className="flex items-center gap-3">
-                  <div className={`
-                    w-10 h-10 rounded-lg flex items-center justify-center shadow-inner
-                    ${idx === 0 ? 'bg-white/20 text-white' : ''}
-                    ${idx === 1 ? 'bg-white/15 text-white' : ''}
-                    ${idx === 2 ? 'bg-white/20 text-white' : ''}
-                  `}>
+                  <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-cusc-blue/10 text-cusc-blue">
                     <Database size={18} />
                   </div>
                   <div>
-                    <h4 className="text-sm font-black uppercase tracking-wider">{item.name}</h4>
+                    <h4 className="text-sm font-black text-slate-900 uppercase tracking-wide">{item.name}</h4>
                   </div>
                 </div>
               </div>
@@ -450,10 +432,10 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
         </div>
 
         {/* Bottom Section: Infra + Hardware (Light theme) */}
-        <div className="lg:col-span-9 bg-slate-100 rounded-xl p-4 shadow-xl relative overflow-hidden border border-slate-200">
+        <div className="lg:col-span-9 bg-slate-100 rounded-xl p-4 shadow-md relative overflow-hidden border border-slate-200">
           <div className="absolute top-0 right-0 w-32 h-32 bg-slate-100 rounded-full -mr-16 -mt-16" />
 
-          <h3 className="text-slate-800 font-black uppercase tracking-widest text-base mb-4 flex items-center gap-3">
+          <h3 className="text-slate-900 font-black uppercase tracking-wide text-base mb-4 flex items-center gap-3">
             <Database size={20} className="text-cusc-blue" />
             HẠ TẦNG VÀ THIẾT BỊ
           </h3>
@@ -465,7 +447,7 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
                   <item.icon size={20} />
                 </div>
                 <div>
-                  <h4 className="text-sm font-black text-slate-800 leading-tight">{item.name}</h4>
+                  <h4 className="text-sm font-black text-slate-900 leading-tight">{item.name}</h4>
                 </div>
               </div>
             ))}
@@ -474,9 +456,9 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
       </div>
 
       {/* Bottom Section: Dịch vụ khác */}
-      <div className="mt-8 bg-white rounded-xl p-6 shadow-xl border border-slate-200 relative overflow-hidden">
+      <div className="mt-8 bg-white rounded-xl p-6 shadow-md border border-slate-200 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-32 h-32 bg-slate-50 rounded-full -mr-16 -mt-16" />
-        <h3 className="text-slate-800 font-black uppercase tracking-widest text-lg mb-6 flex items-center gap-3 relative z-10">
+        <h3 className="text-slate-900 font-black uppercase tracking-wide text-lg mb-6 flex items-center gap-3 relative z-10">
           <Settings size={24} className="text-cusc-gold" />
           {ECOSYSTEM_DATA.otherServices.title}
         </h3>
@@ -491,8 +473,8 @@ const Ecosystem = ({ onSolutionClick }: { onSolutionClick: (name: string) => voi
                 <item.icon size={28} />
               </div>
               <div>
-                <h4 className="text-base font-black text-slate-800 leading-tight">{item.name}</h4>
-                <p className="text-sm text-slate-500 mt-1.5 leading-relaxed">{item.desc}</p>
+                <h4 className="text-base font-black text-slate-900 leading-tight">{item.name}</h4>
+                <p className="text-sm text-slate-600 mt-1.5 leading-relaxed">{item.desc}</p>
               </div>
             </div>
           ))}
