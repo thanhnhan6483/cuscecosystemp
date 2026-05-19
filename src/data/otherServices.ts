@@ -28,10 +28,10 @@ export const OTHER_SERVICES: Record<string, AISolution> = {
       'Zalo / Facebook API',
     ],
     benefits: [
-      { value: '100%', label: 'Responsive mọi thiết bị', color: 'blue' },
-      { value: 'Top 3', label: 'Kết quả tìm kiếm Google', color: 'emerald' },
-      { value: '99.9%', label: 'Uptime đảm bảo', color: 'emerald' },
-      { value: '0 code', label: 'Quản trị nội dung', color: 'blue' },
+      { value: '🏆', label: 'Tăng nhận diện thương hiệu', color: 'blue' },
+      { value: '📈', label: 'Thu hút người dùng mới', color: 'emerald' },
+      { value: '💰', label: 'Giảm chi phí vận hành', color: 'emerald' },
+      { value: '⭐', label: 'Nâng cao uy tín đơn vị', color: 'blue' },
     ],
     differences: [
       'Tuân thủ Khung kiến trúc Chính phủ số, sẵn sàng kết nối liên thông',
