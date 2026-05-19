@@ -8,12 +8,14 @@ import Contact from './pages/Contact.tsx';
 import CuscIsooPage from './pages/CuscIsooPage.tsx';
 import CuscUiisPage from './pages/CuscUiisPage.tsx';
 import CuscGatePage from './pages/CuscGatePage.tsx';
+import { SocialFloat } from './components/SocialFloat.tsx';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>
       <BrowserRouter>
+        <SocialFloat />
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/about" element={<About />} />
