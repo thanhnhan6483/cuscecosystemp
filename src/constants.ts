@@ -95,7 +95,7 @@ export const ECOSYSTEM_DATA = {
 
   // New Section: Dịch vụ khác (Right, below outsourcing)
   otherServices: {
-    title: 'Dịch vụ khác',
+    title: 'Giới thiệu dịch vụ',
     items: [
       { name: 'Gia công phần mềm', icon: Code2, desc: 'Software Outsourcing' },
       { name: 'Cho thuê phần mềm', icon: Settings, desc: 'SaaS & Licensing' },
