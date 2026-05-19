@@ -33,18 +33,6 @@ export const OTHER_SERVICES: Record<string, AISolution> = {
       { value: '99.9%', label: 'Uptime đảm bảo', color: 'emerald' },
       { value: '0 code', label: 'Quản trị nội dung', color: 'blue' },
     ],
-    example: {
-      inputLabel: 'Khách hàng yêu cầu',
-      input: 'Chúng tôi cần cổng thông tin cho Sở Giáo dục, tích hợp lịch công tác, văn bản và Zalo OA.',
-      outputLabel: 'CUSC-Portal sẽ',
-      output: [
-        'Triển khai giao diện theo bộ nhận diện của Sở',
-        'Tích hợp module Lịch công tác, Văn bản pháp quy',
-        'Kết nối Zalo OA và fanpage Facebook chính thức',
-        'Bàn giao trong 30 ngày, đào tạo quản trị viên',
-      ],
-      note: 'Không cần đội IT riêng để vận hành hàng ngày.',
-    },
     differences: [
       'Tuân thủ Khung kiến trúc Chính phủ số, sẵn sàng kết nối liên thông',
       'Giao diện chuẩn WCAG 2.2 AA — tiếp cận được mọi đối tượng, kể cả người khuyết tật',
