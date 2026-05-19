@@ -1,7 +1,42 @@
-import { Settings, FileCheck, LayoutDashboard, BookOpen, GraduationCap, ShieldCheck, Zap, Cloud, Code2, Layers, Smartphone, Network, Cpu, Globe, Search, Palette, BarChart3, Share2, Wifi, Thermometer, Bell, Activity, Droplets, FlaskConical, FolderKanban, MapPin, TrendingUp, FileSearch, Clock, DollarSign, Users, UserCheck, CalendarDays, Receipt, PieChart, Lock } from 'lucide-react';
+import { Settings, FileCheck, LayoutDashboard, BookOpen, GraduationCap, ShieldCheck, Zap, Cloud, Code2, Layers, Smartphone, Network, Cpu, Globe, Search, Palette, BarChart3, Share2, Wifi, Thermometer, Bell, Activity, Droplets, FlaskConical, FolderKanban, MapPin, TrendingUp, FileSearch, Clock, DollarSign, Users, UserCheck, CalendarDays, Receipt, PieChart, Lock, HeartPulse, Pill, CreditCard, Microscope, Stethoscope, Wrench, GitBranch } from 'lucide-react';
 import { AISolution } from './aiSolutions';
 
 export const OTHER_SERVICES: Record<string, AISolution> = {
+  'cusc-his': {
+    id: 'cusc-his',
+    name: 'CUSC-HIS',
+    subtitle: 'Hệ thống quản lý tổng thể bệnh viện',
+    icon: HeartPulse,
+    type: 'service',
+    overview: 'CUSC-HIS là giải pháp quản lý tổng thể bệnh viện toàn diện, theo dõi bệnh nhân từ lúc vào viện, khám chữa bệnh đến lúc ra viện. Hệ thống gồm 08 phân hệ chính theo Quyết định số 5573/QĐ-BYT của Bộ Y tế — phù hợp với bệnh viện chuyên khoa, đa khoa, công lập và tư nhân.',
+    features: [
+      { icon: Stethoscope, title: 'Khoa khám bệnh & Lâm sàng', desc: 'Hỗ trợ bác sĩ khám nhanh, kê đơn chính xác, quản lý chẩn đoán theo mã ICD10.' },
+      { icon: Pill, title: 'Quản lý dược bệnh viện', desc: 'Kiểm soát nhập/xuất/tồn kho thuốc, cấp phát dược theo đơn, cảnh báo tương tác thuốc.' },
+      { icon: CreditCard, title: 'Thanh toán viện phí & BHYT', desc: 'Tự động tính viện phí, thanh toán BHYT, kết nối Hệ thống thông tin giám định BHYT.' },
+      { icon: Microscope, title: 'Cận lâm sàng', desc: 'Quản lý xét nghiệm, chẩn đoán hình ảnh, trả kết quả điện tử trực tiếp cho bác sĩ.' },
+      { icon: Wrench, title: 'Trang thiết bị y tế', desc: 'Theo dõi tài sản, lịch bảo trì, kiểm kê thiết bị y tế toàn bệnh viện.' },
+      { icon: GitBranch, title: 'Chỉ đạo tuyến & Kết nối quốc gia', desc: 'Đáp ứng Cổng dữ liệu y tế quốc gia, hỗ trợ chuyển tuyến và báo cáo Bộ Y tế.' },
+    ],
+    technologies: [
+      'Kiến trúc module mở',
+      'Mã ICD-10 chuẩn quốc tế',
+      'Cổng dữ liệu y tế quốc gia',
+      'Hệ thống giám định BHYT',
+      'Phân quyền & lưu vết thao tác',
+      'Backup & bảo mật dữ liệu',
+    ],
+    benefits: [
+      { value: '8', label: 'Phân hệ theo QĐ BYT', color: 'blue' },
+      { value: '100%', label: 'Tuân thủ tiêu chí BYT', color: 'emerald' },
+      { value: '↓60%', label: 'Giảm sai sót kê đơn', color: 'emerald' },
+      { value: '24/7', label: 'Dữ liệu bệnh nhân liên tục', color: 'blue' },
+    ],
+    differences: [
+      'Thiết kế module mở — dễ bảo trì, nâng cấp và mở rộng theo nhu cầu từng bệnh viện',
+      'Đáp ứng đầy đủ tiêu chí đánh giá bệnh viện của Bộ Y tế và kết nối Cổng dữ liệu quốc gia',
+      'Phù hợp cả bệnh viện chuyên khoa, đa khoa, công lập và tư nhân — không cần tùy chỉnh lớn',
+    ],
+  },
   'cusc-hrm': {
     id: 'cusc-hrm',
     name: 'CUSC-HRM',
