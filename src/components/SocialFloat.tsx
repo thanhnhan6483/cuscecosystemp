@@ -14,8 +14,9 @@ const SOCIALS = [
     href: 'https://oa.zalo.me/cuscsoftware',
     bg: 'bg-[#0068ff]',
     icon: (
-      <svg viewBox="0 0 48 48" fill="currentColor" className="w-5 h-5">
-        <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-4.5 27.5H17V20h2.5v11.5zm-1.25-13a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm14.25 13h-2.4l-4.6-7v7H23V20h2.4l4.6 7v-7H31v11.5z"/>
+      <svg viewBox="0 0 24 24" fill="white" className="w-6 h-6">
+        {/* Z shape */}
+        <path d="M3 5h12L3 17h13M16 5v14" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
       </svg>
     ),
   },
