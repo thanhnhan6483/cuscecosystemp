@@ -33,28 +33,10 @@ export const OTHER_SERVICES: Record<string, AISolution> = {
       { value: '↑30%', label: 'Tăng năng suất nuôi trồng', color: 'emerald' },
       { value: '0s', label: 'Thời gian cảnh báo', color: 'blue' },
     ],
-    example: {
-      inputLabel: 'Tình huống thực tế',
-      input: 'Lúc 2 giờ sáng, oxy hòa tan trong ao tôm giảm xuống dưới ngưỡng an toàn.',
-      outputLabel: 'CUSC-IoT sẽ',
-      output: [
-        'Phát hiện bất thường ngay lập tức',
-        'Gửi cảnh báo Zalo/SMS đến chủ ao',
-        'Ghi nhận sự kiện vào lịch sử dữ liệu',
-        'Đề xuất bật quạt sục khí tự động',
-      ],
-      note: 'Xử lý kịp thời — tránh thiệt hại hàng chục triệu đồng.',
-    },
     differences: [
       'Thiết bị được hiệu chuẩn chuẩn xác, số liệu đáng tin cậy cho quyết định sản xuất',
       'Hỗ trợ đa giao thức (LoRaWAN, 4G, WiFi) — phủ sóng cả vùng sâu, vùng xa',
       'Tích hợp AI phân tích xu hướng, cảnh báo sớm dịch bệnh trước khi bùng phát',
-    ],
-    clients: [
-      'Hợp tác xã nuôi tôm Cà Mau',
-      'Vùng trồng xoài Đồng Tháp',
-      'Trang trại cá tra An Giang',
-      'Vườn sầu riêng Tiền Giang',
     ],
   },
   'cusc-portal': {
